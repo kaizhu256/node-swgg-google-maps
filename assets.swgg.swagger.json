@@ -1,0 +1,778 @@
+{
+    "basePath": "/",
+    "host": "maps.googleapis.com",
+    "info": {
+        "description": "this zero-dependency package will provide an api for google-maps, with a working demo",
+        "title": "google-maps-lite",
+        "version": "2017.10.1",
+        "x-homepage": "https://github.com/kaizhu256/node-google-maps-lite"
+    },
+    "paths": {
+        "/maps/api/directions/json": {
+            "get": {
+                "operationId": "mapsApiDirectionsJson",
+                "parameters": [
+                    {
+                        "description": "Your application's API key. This key identifies your application for purposes of quota management. https://developers.google.com/maps/documentation/directions/get-api-key",
+                        "in": "query",
+                        "name": "key",
+                        "type": "string",
+                        "x-example": "xxxxxxxx"
+                    },
+                    {
+                        "description": "The language in which to return results. https://developers.google.com/maps/faq#languagesupport",
+                        "enum": [
+                            "ar",
+                            "bg",
+                            "bn",
+                            "ca",
+                            "cs",
+                            "da",
+                            "de",
+                            "el",
+                            "en",
+                            "en-AU",
+                            "en-GB",
+                            "es",
+                            "eu",
+                            "fa",
+                            "fi",
+                            "fil",
+                            "fr",
+                            "gl",
+                            "gu",
+                            "hi",
+                            "hr",
+                            "hu",
+                            "id",
+                            "it",
+                            "iw",
+                            "ja",
+                            "kn",
+                            "ko",
+                            "lt",
+                            "lv",
+                            "ml",
+                            "mr",
+                            "nl",
+                            "no",
+                            "pl",
+                            "pt",
+                            "pt-BR",
+                            "pt-PT",
+                            "ro",
+                            "ru",
+                            "sk",
+                            "sl",
+                            "sr",
+                            "sv",
+                            "ta",
+                            "te",
+                            "th",
+                            "tl",
+                            "tr",
+                            "uk",
+                            "vi",
+                            "zh-CN",
+                            "zh-TW"
+                        ],
+                        "in": "query",
+                        "name": "language",
+                        "type": "string"
+                    },
+                    {
+                        "default": "1600+Amphitheatre+Parkway,+Mountain+View,+CA",
+                        "description": "The address, textual latitude/longitude value, or place ID from which you wish to calculate directions.",
+                        "in": "query",
+                        "name": "origin",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "1600+Amphitheatre+Parkway,+Mountain+View,+CA"
+                    },
+                    {
+                        "default": "37.421,-122.085",
+                        "description": "The address, textual latitude/longitude value, or place ID to which you wish to calculate directions. The options for the destination parameter are the same as for the origin parameter, described above.",
+                        "in": "query",
+                        "name": "destination",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "37.421,-122.085"
+                    },
+                    {
+                        "default": "driving",
+                        "description": "Specifies the mode of transport to use when calculating directions. https://developers.google.com/maps/documentation/directions/intro#TravelModes",
+                        "enum": [
+                            "driving",
+                            "walking",
+                            "bicycling",
+                            "transit"
+                        ],
+                        "in": "query",
+                        "name": "mode",
+                        "type": "string"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "Specifies an array of waypoints. Waypoints alter a route by routing it through the specified location(s). A waypoint is specified as a latitude/longitude coordinate, an encoded polyline, a place ID, or an address which will be geocoded. Encoded polylines must be prefixed with enc: and followed by a colon (:). Place IDs must be prefixed with place_id:. The place ID may only be specified if the request includes an API key or a Google Maps APIs Premium Plan client ID. Waypoints are only supported for driving, walking and bicycling directions. https://developers.google.com/maps/documentation/directions/intro#Waypoints",
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "waypoints",
+                        "type": "array",
+                        "x-example": [
+                            "Mountain View, CA",
+                            "Las Vegas, NV"
+                        ]
+                    },
+                    {
+                        "default": false,
+                        "description": " If set to true, specifies that the Directions service may provide more than one route alternative in the response. Note that providing route alternatives may increase the response time from the server.",
+                        "in": "query",
+                        "name": "alternatives",
+                        "type": "boolean"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "Indicates that the calculated route(s) should avoid the indicated features. https://developers.google.com/maps/documentation/directions/intro#Restrictions",
+                        "enum": [
+                            "tolls",
+                            "highways",
+                            "ferries",
+                            "indoor"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "avoid",
+                        "type": "array"
+                    },
+                    {
+                        "description": "Specifies the unit system to use when displaying results. https://developers.google.com/maps/documentation/directions/intro#UnitSystems",
+                        "enum": [
+                            "metric",
+                            "imperial"
+                        ],
+                        "in": "query",
+                        "name": "units",
+                        "type": "string"
+                    },
+                    {
+                        "description": "The region code, specified as a ccTLD (\"top-level domain\") two-character value. https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                        "in": "query",
+                        "name": "region",
+                        "type": "string",
+                        "x-example": "us"
+                    },
+                    {
+                        "description": "Specifies the desired time of arrival for transit directions, in seconds since midnight, January 1, 1970 UTC. You can specify either departure_time or arrival_time, but not both. Note that arrival_time must be specified as an integer.",
+                        "in": "query",
+                        "name": "arrival_time",
+                        "type": "integer",
+                        "x-example": 0
+                    },
+                    {
+                        "description": "Specifies the desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC. Alternatively, you can specify a value of now, which sets the departure time to the current time (correct to the nearest second).",
+                        "in": "query",
+                        "name": "departure_time",
+                        "type": "string",
+                        "x-example": "now"
+                    },
+                    {
+                        "description": "Specifies the assumptions to use when calculating time in traffic. This setting affects the value returned in the duration_in_traffic field in the response, which contains the predicted time in traffic based on historical averages. The traffic_model parameter may only be specified for driving directions where the request includes a departure_time, and only if the request includes an API key or a Google Maps APIs Premium Plan client ID.",
+                        "enum": [
+                            "best_guess",
+                            "pessimistic",
+                            "optimistic"
+                        ],
+                        "in": "query",
+                        "name": "traffic_model",
+                        "type": "string"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "Specifies one or more preferred modes of transit. This parameter may only be specified for transit directions, and only if the request includes an API key or a Google Maps APIs Premium Plan client ID.",
+                        "enum": [
+                            "bus",
+                            "subway",
+                            "train",
+                            "tram",
+                            "rail"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "transit_mode",
+                        "type": "array"
+                    },
+                    {
+                        "description": "Specifies preferences for transit routes. Using this parameter, you can bias the options returned, rather than accepting the default best route chosen by the API. This parameter may only be specified for transit directions, and only if the request includes an API key or a Google Maps APIs Premium Plan client ID.",
+                        "enum": [
+                            "less_walking",
+                            "fewer_transfers"
+                        ],
+                        "in": "query",
+                        "name": "transit_routing_preference",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "Directions Requests. https://developers.google.com/maps/documentation/directions/intro#RequestParameters",
+                "tags": [
+                    "google-maps"
+                ]
+            }
+        },
+        "/maps/api/geocode/json#requireAddress": {
+            "get": {
+                "operationId": "mapsApiGeocodeJsonRequireAddress",
+                "parameters": [
+                    {
+                        "description": "Your application's API key. This key identifies your application for purposes of quota management. https://developers.google.com/maps/documentation/geocoding/get-api-key",
+                        "in": "query",
+                        "name": "key",
+                        "type": "string",
+                        "x-example": "xxxxxxxx"
+                    },
+                    {
+                        "description": "The language in which to return results. https://developers.google.com/maps/faq#languagesupport",
+                        "enum": [
+                            "ar",
+                            "bg",
+                            "bn",
+                            "ca",
+                            "cs",
+                            "da",
+                            "de",
+                            "el",
+                            "en",
+                            "en-AU",
+                            "en-GB",
+                            "es",
+                            "eu",
+                            "fa",
+                            "fi",
+                            "fil",
+                            "fr",
+                            "gl",
+                            "gu",
+                            "hi",
+                            "hr",
+                            "hu",
+                            "id",
+                            "it",
+                            "iw",
+                            "ja",
+                            "kn",
+                            "ko",
+                            "lt",
+                            "lv",
+                            "ml",
+                            "mr",
+                            "nl",
+                            "no",
+                            "pl",
+                            "pt",
+                            "pt-BR",
+                            "pt-PT",
+                            "ro",
+                            "ru",
+                            "sk",
+                            "sl",
+                            "sr",
+                            "sv",
+                            "ta",
+                            "te",
+                            "th",
+                            "tl",
+                            "tr",
+                            "uk",
+                            "vi",
+                            "zh-CN",
+                            "zh-TW"
+                        ],
+                        "in": "query",
+                        "name": "language",
+                        "type": "string"
+                    },
+                    {
+                        "default": "1600+Amphitheatre+Parkway,+Mountain+View,+CA",
+                        "description": "The street address that you want to geocode, in the format used by the national postal service of the country concerned. Additional address elements such as business names and unit, suite or floor numbers should be avoided. https://developers.google.com/maps/faq#geocoder_queryformat",
+                        "in": "query",
+                        "name": "address",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "1600+Amphitheatre+Parkway,+Mountain+View,+CA"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "A components filter with elements separated by a pipe (|). The components filter is also accepted as an optional parameter if an address is provided. Each element in the components filter consists of a component:value pair, and fully restricts the results from the geocoder. https://developers.google.com/maps/documentation/geocoding/intro#ComponentFiltering",
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "components",
+                        "type": "array",
+                        "x-example": [
+                            "street_number:1600",
+                            "route:Amphitheatre+Parkway",
+                            "locality:Mountain+View",
+                            "administrative_area_level_1:CA",
+                            "country:US"
+                        ]
+                    },
+                    {
+                        "description": "The bounding box of the viewport within which to bias geocode results more prominently. This parameter will only influence, not fully restrict, results from the geocoder. https://developers.google.com/maps/documentation/geocoding/intro#Viewports",
+                        "in": "query",
+                        "name": "bounds",
+                        "type": "string",
+                        "x-example": "-90,-180|90,180"
+                    },
+                    {
+                        "description": "The region code, specified as a ccTLD (\"top-level domain\") two-character value. https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                        "in": "query",
+                        "name": "region",
+                        "type": "string",
+                        "x-example": "us"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "Geocoding (Latitude/Longitude Lookup). https://developers.google.com/maps/documentation/geocoding/intro#geocoding",
+                "tags": [
+                    "google-maps"
+                ]
+            }
+        },
+        "/maps/api/geocode/json#requireComponents": {
+            "get": {
+                "operationId": "mapsApiGeocodeJsonRequireComponents",
+                "parameters": [
+                    {
+                        "description": "Your application's API key. This key identifies your application for purposes of quota management. https://developers.google.com/maps/documentation/geocoding/get-api-key",
+                        "in": "query",
+                        "name": "key",
+                        "type": "string",
+                        "x-example": "xxxxxxxx"
+                    },
+                    {
+                        "description": "The language in which to return results. https://developers.google.com/maps/faq#languagesupport",
+                        "enum": [
+                            "ar",
+                            "bg",
+                            "bn",
+                            "ca",
+                            "cs",
+                            "da",
+                            "de",
+                            "el",
+                            "en",
+                            "en-AU",
+                            "en-GB",
+                            "es",
+                            "eu",
+                            "fa",
+                            "fi",
+                            "fil",
+                            "fr",
+                            "gl",
+                            "gu",
+                            "hi",
+                            "hr",
+                            "hu",
+                            "id",
+                            "it",
+                            "iw",
+                            "ja",
+                            "kn",
+                            "ko",
+                            "lt",
+                            "lv",
+                            "ml",
+                            "mr",
+                            "nl",
+                            "no",
+                            "pl",
+                            "pt",
+                            "pt-BR",
+                            "pt-PT",
+                            "ro",
+                            "ru",
+                            "sk",
+                            "sl",
+                            "sr",
+                            "sv",
+                            "ta",
+                            "te",
+                            "th",
+                            "tl",
+                            "tr",
+                            "uk",
+                            "vi",
+                            "zh-CN",
+                            "zh-TW"
+                        ],
+                        "in": "query",
+                        "name": "language",
+                        "type": "string"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "default": [
+                            "street_number:1600",
+                            "route:Amphitheatre+Parkway",
+                            "locality:Mountain+View",
+                            "administrative_area_level_1:CA",
+                            "country:US"
+                        ],
+                        "description": "A components filter with elements separated by a pipe (|). The components filter is also accepted as an optional parameter if an address is provided. Each element in the components filter consists of a component:value pair, and fully restricts the results from the geocoder. https://developers.google.com/maps/documentation/geocoding/intro#ComponentFiltering",
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "components",
+                        "required": true,
+                        "type": "array",
+                        "x-example": [
+                            "street_number:1600",
+                            "route:Amphitheatre+Parkway",
+                            "locality:Mountain+View",
+                            "administrative_area_level_1:CA",
+                            "country:US"
+                        ]
+                    },
+                    {
+                        "description": "The bounding box of the viewport within which to bias geocode results more prominently. This parameter will only influence, not fully restrict, results from the geocoder. https://developers.google.com/maps/documentation/geocoding/intro#Viewports",
+                        "in": "query",
+                        "name": "bounds",
+                        "type": "string",
+                        "x-example": "-90,-180|90,180"
+                    },
+                    {
+                        "description": "The region code, specified as a ccTLD (\"top-level domain\") two-character value. https://en.wikipedia.org/wiki/Country_code_top-level_domain",
+                        "in": "query",
+                        "name": "region",
+                        "type": "string",
+                        "x-example": "us"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "Geocoding (Latitude/Longitude Lookup). https://developers.google.com/maps/documentation/geocoding/intro#ComponentFiltering",
+                "tags": [
+                    "google-maps"
+                ]
+            }
+        },
+        "/maps/api/geocode/json#requireLatLng": {
+            "get": {
+                "operationId": "mapsApiGeocodeJsonRequireLatLng",
+                "parameters": [
+                    {
+                        "description": "Your application's API key. This key identifies your application for purposes of quota management. https://developers.google.com/maps/documentation/geocoding/get-api-key",
+                        "in": "query",
+                        "name": "key",
+                        "type": "string",
+                        "x-example": "xxxxxxxx"
+                    },
+                    {
+                        "description": "The language in which to return results. https://developers.google.com/maps/faq#languagesupport",
+                        "enum": [
+                            "ar",
+                            "bg",
+                            "bn",
+                            "ca",
+                            "cs",
+                            "da",
+                            "de",
+                            "el",
+                            "en",
+                            "en-AU",
+                            "en-GB",
+                            "es",
+                            "eu",
+                            "fa",
+                            "fi",
+                            "fil",
+                            "fr",
+                            "gl",
+                            "gu",
+                            "hi",
+                            "hr",
+                            "hu",
+                            "id",
+                            "it",
+                            "iw",
+                            "ja",
+                            "kn",
+                            "ko",
+                            "lt",
+                            "lv",
+                            "ml",
+                            "mr",
+                            "nl",
+                            "no",
+                            "pl",
+                            "pt",
+                            "pt-BR",
+                            "pt-PT",
+                            "ro",
+                            "ru",
+                            "sk",
+                            "sl",
+                            "sr",
+                            "sv",
+                            "ta",
+                            "te",
+                            "th",
+                            "tl",
+                            "tr",
+                            "uk",
+                            "vi",
+                            "zh-CN",
+                            "zh-TW"
+                        ],
+                        "in": "query",
+                        "name": "language",
+                        "type": "string"
+                    },
+                    {
+                        "default": "37.421,-122.085",
+                        "description": "The latitude and longitude values specifying the location for which you wish to obtain the closest, human-readable address.",
+                        "in": "query",
+                        "name": "latlng",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "37.421,-122.085"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "A filter of one or more address types, separated by a pipe (|). If the parameter contains multiple address types, the API returns all addresses that match any of the types. A note about processing: The result_type parameter does not restrict the search to the specified address type(s). Rather, the result_type acts as a post-search filter: the API fetches all results for the specified latlng, then discards those results that do not match the specified address type(s). Note: This parameter is available only for requests that include an API key or a client ID.",
+                        "enum": [
+                            "street_address",
+                            "route",
+                            "intersection",
+                            "political",
+                            "country",
+                            "administrative_area_level_1",
+                            "administrative_area_level_2",
+                            "administrative_area_level_3",
+                            "administrative_area_level_4",
+                            "administrative_area_level_5",
+                            "colloquial_area",
+                            "locality",
+                            "ward",
+                            "sublocality",
+                            "neighborhood",
+                            "premise",
+                            "subpremise",
+                            "postal_code",
+                            "natural_feature",
+                            "airport",
+                            "park",
+                            "point_of_interest"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "result_type",
+                        "type": "array"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "A filter of one or more location types, separated by a pipe (|). If the parameter contains multiple location types, the API returns all addresses that match any of the types. A note about processing: The location_type parameter does not restrict the search to the specified location type(s). Rather, the location_type acts as a post-search filter: the API fetches all results for the specified latlng, then discards those results that do not match the specified location type(s). Note: This parameter is available only for requests that include an API key or a client ID.",
+                        "enum": [
+                            "ROOFTOP",
+                            "RANGE_INTERPOLATED",
+                            "GEOMETRIC_CENTER",
+                            "APPROXIMATE"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "location_type",
+                        "type": "array"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "Reverse Geocoding (Address Lookup). https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding",
+                "tags": [
+                    "google-maps"
+                ]
+            }
+        },
+        "/maps/api/geocode/json#requirePlaceId": {
+            "get": {
+                "operationId": "mapsApiGeocodeJsonRequirePlaceId",
+                "parameters": [
+                    {
+                        "description": "Your application's API key. This key identifies your application for purposes of quota management. https://developers.google.com/maps/documentation/geocoding/get-api-key",
+                        "in": "query",
+                        "name": "key",
+                        "type": "string",
+                        "x-example": "xxxxxxxx"
+                    },
+                    {
+                        "description": "The language in which to return results. https://developers.google.com/maps/faq#languagesupport",
+                        "enum": [
+                            "ar",
+                            "bg",
+                            "bn",
+                            "ca",
+                            "cs",
+                            "da",
+                            "de",
+                            "el",
+                            "en",
+                            "en-AU",
+                            "en-GB",
+                            "es",
+                            "eu",
+                            "fa",
+                            "fi",
+                            "fil",
+                            "fr",
+                            "gl",
+                            "gu",
+                            "hi",
+                            "hr",
+                            "hu",
+                            "id",
+                            "it",
+                            "iw",
+                            "ja",
+                            "kn",
+                            "ko",
+                            "lt",
+                            "lv",
+                            "ml",
+                            "mr",
+                            "nl",
+                            "no",
+                            "pl",
+                            "pt",
+                            "pt-BR",
+                            "pt-PT",
+                            "ro",
+                            "ru",
+                            "sk",
+                            "sl",
+                            "sr",
+                            "sv",
+                            "ta",
+                            "te",
+                            "th",
+                            "tl",
+                            "tr",
+                            "uk",
+                            "vi",
+                            "zh-CN",
+                            "zh-TW"
+                        ],
+                        "in": "query",
+                        "name": "language",
+                        "type": "string"
+                    },
+                    {
+                        "default": "ChIJPzxqWQK6j4AR3OFRJ6LMaKo",
+                        "description": "The place ID of the place for which you wish to obtain the human-readable address. The place ID is a unique identifier that can be used with other Google APIs. For example, you can use the placeID returned by the Google Maps Roads API to get the address for a snapped point. For more information about place IDs, see the place ID overview. The place ID may only be specified if the request includes an API key or a Google Maps APIs Premium Plan client ID.",
+                        "in": "query",
+                        "name": "place_id",
+                        "required": true,
+                        "type": "string",
+                        "x-example": "ChIJPzxqWQK6j4AR3OFRJ6LMaKo"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "A filter of one or more address types, separated by a pipe (|). If the parameter contains multiple address types, the API returns all addresses that match any of the types. A note about processing: The result_type parameter does not restrict the search to the specified address type(s). Rather, the result_type acts as a post-search filter: the API fetches all results for the specified latlng, then discards those results that do not match the specified address type(s). Note: This parameter is available only for requests that include an API key or a client ID.",
+                        "enum": [
+                            "street_address",
+                            "route",
+                            "intersection",
+                            "political",
+                            "country",
+                            "administrative_area_level_1",
+                            "administrative_area_level_2",
+                            "administrative_area_level_3",
+                            "administrative_area_level_4",
+                            "administrative_area_level_5",
+                            "colloquial_area",
+                            "locality",
+                            "ward",
+                            "sublocality",
+                            "neighborhood",
+                            "premise",
+                            "subpremise",
+                            "postal_code",
+                            "natural_feature",
+                            "airport",
+                            "park",
+                            "point_of_interest"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "result_type",
+                        "type": "array"
+                    },
+                    {
+                        "collectionFormat": "pipes",
+                        "description": "A filter of one or more location types, separated by a pipe (|). If the parameter contains multiple location types, the API returns all addresses that match any of the types. A note about processing: The location_type parameter does not restrict the search to the specified location type(s). Rather, the location_type acts as a post-search filter: the API fetches all results for the specified latlng, then discards those results that do not match the specified location type(s). Note: This parameter is available only for requests that include an API key or a client ID.",
+                        "enum": [
+                            "ROOFTOP",
+                            "RANGE_INTERPOLATED",
+                            "GEOMETRIC_CENTER",
+                            "APPROXIMATE"
+                        ],
+                        "in": "query",
+                        "items": {
+                            "type": "string"
+                        },
+                        "name": "location_type",
+                        "type": "array"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "default response"
+                    }
+                },
+                "summary": "Retrieving an Address for a Place ID. https://developers.google.com/maps/documentation/geocoding/intro#place-id",
+                "tags": [
+                    "google-maps"
+                ]
+            }
+        }
+    },
+    "schemes": [
+        "https"
+    ],
+    "swagger": "2.0",
+    "tags": [
+        {
+            "name": "google-maps"
+        }
+    ],
+    "x-description": "https://developers.google.com/maps/documentation/",
+    "x-githubForwardProxyUrl": "https://h1-proxy1.herokuapp.com",
+    "x-url-console": "https://console.developers.google.com/apis/library"
+}
