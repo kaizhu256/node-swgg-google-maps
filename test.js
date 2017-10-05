@@ -39,7 +39,7 @@
             : global;
         // re-init local
         local = local.global.local = (local.global.utility2 ||
-            require('utility2')).requireReadme();
+            require('./assets.utility2.rollup.js')).requireReadme();
         // init test
         local.testRunInit(local);
     }());

@@ -2,9 +2,9 @@
 this zero-dependency package will provide an api for google-maps, with a working demo
 
 # live demo
-- [https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html)
+- [https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app)
 
-[![swaggerdoc](https://kaizhu256.github.io/node-google-maps-lite/build/screenshot.deployGithub.browser.%252Fnode-google-maps-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html)
+[![screenshot](https://kaizhu256.github.io/node-google-maps-lite/build/screenshot.deployGithub.browser.%252Fnode-google-maps-lite%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app)
 
 
 
@@ -55,18 +55,15 @@ this zero-dependency package will provide an api for google-maps, with a working
 
 [![apidoc](https://kaizhu256.github.io/node-google-maps-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/apidoc.html)
 
-#### swagger doc
-- [https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html)
-
-[![swaggerdoc](https://kaizhu256.github.io/node-google-maps-lite/build/screenshot.deployGithub.browser.%252Fnode-google-maps-lite%252Fbuild%252Fapp%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.html)
-
 #### todo
-- flesh out working example.js demo
 - none
 
-#### changelog for v2017.10.1
-- npm publish 2017.10.1
-- create initial working swaggerdoc with /maps/api/directions and /maps/api/geocode apis
+#### changelog for v2017.10.2
+- npm publish 2017.10.2
+- add file assets.utility2.rollup.js
+- apidoc - document swgg.apiDict
+- flesh out working example.js demo
+- persist api-key to localStorage
 - none
 
 #### this package requires
@@ -164,6 +161,14 @@ instruction
             : require('google-maps-lite'));
         // init exports
         local.global.local = local;
+        // init assets
+        local.assetsDict['/assets.index.template.html'] = local.assetsDict['/assets.swgg.html'];
+        // coverage-hack - ignore else-statement
+        local.nop(local.modeJs === 'node' && !local.global.utility2_rollup && (function () {
+            local.swgg.apiDictUpdate(JSON.parse(
+                local.fs.readFileSync(local.__dirname + '/assets.swgg.swagger.json')
+            ));
+        }()));
     }());
     switch (local.modeJs) {
 
@@ -270,162 +275,6 @@ instruction
         });
         // init assets
         local.assetsDict = local.assetsDict || {};
-        /* jslint-ignore-begin */
-        local.assetsDict['/assets.index.template.html'] = '\
-<!doctype html>\n\
-<html lang="en">\n\
-<head>\n\
-<meta charset="UTF-8">\n\
-<meta name="viewport" content="width=device-width, initial-scale=1">\n\
-<!-- "assets.index.default.template.html" -->\n\
-<title>{{env.npm_package_name}} (v{{env.npm_package_version}})</title>\n\
-<style>\n\
-/*csslint\n\
-    box-sizing: false,\n\
-    universal-selector: false\n\
-*/\n\
-* {\n\
-    box-sizing: border-box;\n\
-}\n\
-body {\n\
-    background: #dde;\n\
-    font-family: Arial, Helvetica, sans-serif;\n\
-    margin: 2rem;\n\
-}\n\
-body > * {\n\
-    margin-bottom: 1rem;\n\
-}\n\
-body > button {\n\
-    width: 20rem;\n\
-}\n\
-button {\n\
-    cursor: pointer;\n\
-}\n\
-.uiAnimateSlide {\n\
-    overflow-y: hidden;\n\
-    transition: border-bottom 250ms, border-top 250ms, margin-bottom 250ms, margin-top 250ms, max-height 250ms, min-height 250ms, padding-bottom 250ms, padding-top 250ms;\n\
-}\n\
-.utility2FooterDiv {\n\
-    margin-top: 20px;\n\
-    text-align: center;\n\
-}\n\
-.zeroPixel {\n\
-    border: 0;\n\
-    height: 0;\n\
-    margin: 0;\n\
-    padding: 0;\n\
-    width: 0;\n\
-}\n\
-</style>\n\
-<style>\n\
-/*csslint\n\
-*/\n\
-textarea {\n\
-    font-family: monospace;\n\
-    height: 10rem;\n\
-    width: 100%;\n\
-}\n\
-textarea[readonly] {\n\
-    background: #ddd;\n\
-}\n\
-</style>\n\
-</head>\n\
-<body>\n\
-<div id="ajaxProgressDiv1" style="background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 500ms, width 1500ms; width: 0%;"></div>\n\
-<script>\n\
-/*jslint\n\
-    bitwise: true,\n\
-    browser: true,\n\
-    maxerr: 8,\n\
-    maxlen: 96,\n\
-    node: true,\n\
-    nomen: true,\n\
-    regexp: true,\n\
-    stupid: true\n\
-*/\n\
-(function () {\n\
-    "use strict";\n\
-    var ajaxProgressDiv1,\n\
-        ajaxProgressState,\n\
-        ajaxProgressUpdate,\n\
-        timerIntervalAjaxProgressUpdate;\n\
-    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");\n\
-    setTimeout(function () {\n\
-        ajaxProgressDiv1.style.width = "25%";\n\
-    });\n\
-    ajaxProgressState = 0;\n\
-    ajaxProgressUpdate = (window.local &&\n\
-        window.local.ajaxProgressUpdate) || function () {\n\
-        ajaxProgressDiv1.style.width = "100%";\n\
-        setTimeout(function () {\n\
-            ajaxProgressDiv1.style.background = "transparent";\n\
-            setTimeout(function () {\n\
-                ajaxProgressDiv1.style.width = "0%";\n\
-            }, 500);\n\
-        }, 1500);\n\
-    };\n\
-    timerIntervalAjaxProgressUpdate = setInterval(function () {\n\
-        ajaxProgressState += 1;\n\
-        ajaxProgressDiv1.style.width = Math.max(\n\
-            100 - 75 * Math.exp(-0.125 * ajaxProgressState),\n\
-            Number(ajaxProgressDiv1.style.width.slice(0, -1)) || 0\n\
-        ) + "%";\n\
-    }, 1000);\n\
-    window.addEventListener("load", function () {\n\
-        clearInterval(timerIntervalAjaxProgressUpdate);\n\
-        ajaxProgressUpdate();\n\
-    });\n\
-}());\n\
-</script>\n\
-<h1>\n\
-<!-- utility2-comment\n\
-    <a\n\
-        {{#if env.npm_package_homepage}}\n\
-        href="{{env.npm_package_homepage}}"\n\
-        {{/if env.npm_package_homepage}}\n\
-        target="_blank"\n\
-    >\n\
-utility2-comment -->\n\
-        {{env.npm_package_name}} (v{{env.npm_package_version}})\n\
-<!-- utility2-comment\n\
-    </a>\n\
-utility2-comment -->\n\
-</h1>\n\
-<h3>{{env.npm_package_description}}</h3>\n\
-<!-- utility2-comment\n\
-<h4><a download href="assets.app.js">download standalone app</a></h4>\n\
-<button class="onclick onreset" id="testRunButton1">run internal test</button><br>\n\
-<div class="uiAnimateSlide" id="testReportDiv1" style="border-bottom: 0; border-top: 0; margin-bottom: 0; margin-top: 0; max-height: 0; padding-bottom: 0; padding-top: 0;"></div>\n\
-utility2-comment -->\n\
-\n\
-\n\
-\n\
-<label>stderr and stdout</label>\n\
-<textarea class="resettable" id="outputTextareaStdout1" readonly></textarea>\n\
-<!-- utility2-comment\n\
-{{#if isRollup}}\n\
-<script src="assets.app.js"></script>\n\
-{{#unless isRollup}}\n\
-utility2-comment -->\n\
-<script src="assets.utility2.rollup.js"></script>\n\
-<script>window.utility2.onResetBefore.counter += 1;</script>\n\
-<script src="jsonp.utility2.stateInit?callback=window.utility2.stateInit"></script>\n\
-<script src="assets.google_maps.js"></script>\n\
-<script src="assets.example.js"></script>\n\
-<script src="assets.test.js"></script>\n\
-<script>window.utility2.onResetBefore();</script>\n\
-<!-- utility2-comment\n\
-{{/if isRollup}}\n\
-utility2-comment -->\n\
-<div class="utility2FooterDiv">\n\
-    [ this app was created with\n\
-    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>\n\
-    ]\n\
-</div>\n\
-</body>\n\
-</html>\n\
-';
-        /* jslint-ignore-end */
         [
             'assets.index.css',
             'assets.index.template.html',
@@ -472,7 +321,7 @@ utility2-comment -->\n\
         local.assetsDict['/assets.google_maps.js'] =
             local.assetsDict['/assets.google_maps.js'] ||
             local.fs.readFileSync(
-                local.google_maps.__dirname + '/lib.google_maps.js',
+                local.__dirname + '/lib.google_maps.js',
                 'utf8'
             ).replace((/^#!/), '//');
         /* jslint-ignore-end */
@@ -562,7 +411,9 @@ utility2-comment -->\n\
         "node": ">=4.0"
     },
     "homepage": "https://github.com/kaizhu256/node-google-maps-lite",
-    "keywords": [],
+    "keywords": [
+        "google-maps"
+    ],
     "license": "MIT",
     "main": "lib.google_maps.js",
     "name": "google-maps-lite",
@@ -584,7 +435,7 @@ utility2-comment -->\n\
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.10.1"
+    "version": "2017.10.2"
 }
 ```
 

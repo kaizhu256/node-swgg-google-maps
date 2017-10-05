@@ -4,7 +4,7 @@
     "info": {
         "description": "this zero-dependency package will provide an api for google-maps, with a working demo",
         "title": "google-maps-lite",
-        "version": "2017.10.1",
+        "version": "2017.10.2",
         "x-homepage": "https://github.com/kaizhu256/node-google-maps-lite"
     },
     "paths": {
@@ -17,6 +17,7 @@
                         "in": "query",
                         "name": "key",
                         "type": "string",
+                        "x-apiKey": true,
                         "x-example": "xxxxxxxx"
                     },
                     {
@@ -238,6 +239,7 @@
                         "in": "query",
                         "name": "key",
                         "type": "string",
+                        "x-apiKey": true,
                         "x-example": "xxxxxxxx"
                     },
                     {
@@ -362,6 +364,7 @@
                         "in": "query",
                         "name": "key",
                         "type": "string",
+                        "x-apiKey": true,
                         "x-example": "xxxxxxxx"
                     },
                     {
@@ -485,6 +488,7 @@
                         "in": "query",
                         "name": "key",
                         "type": "string",
+                        "x-apiKey": true,
                         "x-example": "xxxxxxxx"
                     },
                     {
@@ -628,6 +632,7 @@
                         "in": "query",
                         "name": "key",
                         "type": "string",
+                        "x-apiKey": true,
                         "x-example": "xxxxxxxx"
                     },
                     {
