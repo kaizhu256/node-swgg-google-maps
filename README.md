@@ -44,6 +44,8 @@ this zero-dependency package will provide an api for google-maps, with a working
 # cdn download
 - [https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.google_maps.js](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.google_maps.js)
 
+- [https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.swagger.json](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/app/assets.swgg.swagger.json)
+
 
 
 # documentation
@@ -56,14 +58,16 @@ this zero-dependency package will provide an api for google-maps, with a working
 [![apidoc](https://kaizhu256.github.io/node-google-maps-lite/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://kaizhu256.github.io/node-google-maps-lite/build..beta..travis-ci.org/apidoc.html)
 
 #### todo
+- continue adding extra map-api's
 - none
 
-#### changelog for v2017.10.2
-- npm publish 2017.10.2
-- add file assets.utility2.rollup.js
-- apidoc - document swgg.apiDict
-- flesh out working example.js demo
-- persist api-key to localStorage
+#### changelog for v2017.10.12
+- npm publish 2017.10.12
+- add api POST /geolocation/v1/geolocate
+- add api GET /maps/api/distancematrix/json
+- add api GET /maps/api/elevation/json
+- add api GET /maps/api/timezone
+- README.md - include assets.swgg.swagger.json in cdn-download section
 - none
 
 #### this package requires
@@ -163,12 +167,6 @@ instruction
         local.global.local = local;
         // init assets
         local.assetsDict['/assets.index.template.html'] = local.assetsDict['/assets.swgg.html'];
-        // coverage-hack - ignore else-statement
-        local.nop(local.modeJs === 'node' && !local.global.utility2_rollup && (function () {
-            local.swgg.apiDictUpdate(JSON.parse(
-                local.fs.readFileSync(local.__dirname + '/assets.swgg.swagger.json')
-            ));
-        }()));
     }());
     switch (local.modeJs) {
 
@@ -435,7 +433,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.10.2"
+    "version": "2017.10.12"
 }
 ```
 
