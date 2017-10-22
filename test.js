@@ -1,9 +1,9 @@
-/* istanbul instrument in package google_maps */
+/* istanbul instrument in package swgg_google_maps */
 /*jslint
     bitwise: true,
     browser: true,
     maxerr: 8,
-    maxlen: 96,
+    maxlen: 100,
     node: true,
     nomen: true,
     regexp: true,

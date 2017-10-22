@@ -1,9 +1,9 @@
-/* istanbul instrument in package google_maps */
+/* istanbul instrument in package swgg_google_maps */
 /*jslint
     bitwise: true,
     browser: true,
     maxerr: 8,
-    maxlen: 96,
+    maxlen: 100,
     node: true,
     nomen: true,
     regexp: true,
@@ -40,10 +40,10 @@
         // init utility2_rollup
         local = local.global.utility2_rollup || local;
         // init lib
-        local.local = local.google_maps = local;
+        local.local = local.swgg_google_maps = local;
         // init exports
         if (local.modeJs === 'browser') {
-            local.global.utility2_google_maps = local;
+            local.global.utility2_swgg_google_maps = local;
         } else {
             // require builtins
             Object.keys(process.binding('natives')).forEach(function (key) {
