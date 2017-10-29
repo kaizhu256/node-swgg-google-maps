@@ -1,5 +1,5 @@
 # swgg-google-maps
-this zero-dependency package will provide a javascript-client for google-map's web-api, with a working demo
+this zero-dependency package will provide a javascript-client for google-maps' web-apis, with a working demo
 
 # live demo
 - [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
@@ -60,19 +60,10 @@ this zero-dependency package will provide a javascript-client for google-map's w
 #### todo
 - none
 
-#### changelog for v2017.10.22
-- npm publish 2017.10.22
-- rename package-name swgg-google-maps -> swgg-google-maps
-- add api GET /maps/api/place/autocomplete/json
-- add api GET /maps/api/place/details/json
-- add api GET /maps/api/place/nearbysearch/json
-- add api GET /maps/api/place/photo
-- add api GET /maps/api/place/queryautocomplete/json
-- add api GET /maps/api/place/textsearch/json
-- add api GET /v1/nearestRoads
-- add api GET /v1/snapToRoads
-- add api GET /v1/speedLimits
-- swgg - add feature \$SWGG_TAGS0_FILTER to filter x-tags0
+#### changelog for v2017.10.28
+- npm publish 2017.10.28
+- remove unused browser-code when building README.md
+- update docs
 - none
 
 #### this package requires
@@ -86,13 +77,13 @@ this zero-dependency package will provide a javascript-client for google-map's w
 ```shell
 # example.sh
 
-# this shell script will download and run a web demo of swgg-google-maps as a standalone app
+# this shell script will download and run a web-demo of swgg-google-maps as a standalone app
 
 # 1. download standalone app
 curl -O https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.app.js
 # 2. run standalone app
 node ./assets.app.js
-# 3. open a browser to http://127.0.0.1:8081 and play with the web demo
+# 3. open a browser to http://127.0.0.1:8081 and play with the web-demo
 # 4. edit file assets.app.js to suit your needs
 ```
 
@@ -113,13 +104,13 @@ node ./assets.app.js
 /*
 example.js
 
-this script will run a web demo of swgg-google-maps
+this script will run a web-demo of swgg-google-maps
 
 instruction
     1. save this script as example.js
     2. run the shell command:
         $ npm install swgg-google-maps && PORT=8081 node example.js
-    3. open a browser to http://127.0.0.1:8081 and play with the web demo
+    3. open a browser to http://127.0.0.1:8081 and play with the web-demo
     4. edit this script to suit your needs
 */
 
@@ -180,87 +171,6 @@ instruction
     // run browser js-env code - init-test
     /* istanbul ignore next */
     case 'browser':
-        local.testRunBrowser = function (event) {
-            if (!event || (event &&
-                    event.currentTarget &&
-                    event.currentTarget.className &&
-                    event.currentTarget.className.includes &&
-                    event.currentTarget.className.includes('onreset'))) {
-                // reset output
-                Array.from(
-                    document.querySelectorAll('body > .resettable')
-                ).forEach(function (element) {
-                    switch (element.tagName) {
-                    case 'INPUT':
-                    case 'TEXTAREA':
-                        element.value = '';
-                        break;
-                    default:
-                        element.textContent = '';
-                    }
-                });
-            }
-            switch (event && event.currentTarget && event.currentTarget.id) {
-            case 'testRunButton1':
-                // show tests
-                if (document.querySelector('#testReportDiv1').style.maxHeight === '0px') {
-                    local.uiAnimateSlideDown(document.querySelector('#testReportDiv1'));
-                    document.querySelector('#testRunButton1').textContent =
-                        'hide internal test';
-                    local.modeTest = true;
-                    local.testRunDefault(local);
-                // hide tests
-                } else {
-                    local.uiAnimateSlideUp(document.querySelector('#testReportDiv1'));
-                    document.querySelector('#testRunButton1').textContent = 'run internal test';
-                }
-                break;
-            // custom-case
-            default:
-                break;
-            }
-            if (document.querySelector('#inputTextareaEval1') && (!event || (event &&
-                    event.currentTarget &&
-                    event.currentTarget.className &&
-                    event.currentTarget.className.includes &&
-                    event.currentTarget.className.includes('oneval')))) {
-                // try to eval input-code
-                try {
-                    /*jslint evil: true*/
-                    eval(document.querySelector('#inputTextareaEval1').value);
-                } catch (errorCaught) {
-                    console.error(errorCaught);
-                }
-            }
-        };
-        // log stderr and stdout to #outputTextareaStdout1
-        ['error', 'log'].forEach(function (key) {
-            console[key + '_original'] = console[key];
-            console[key] = function () {
-                var element;
-                console[key + '_original'].apply(console, arguments);
-                element = document.querySelector('#outputTextareaStdout1');
-                if (!element) {
-                    return;
-                }
-                // append text to #outputTextareaStdout1
-                element.value += Array.from(arguments).map(function (arg) {
-                    return typeof arg === 'string'
-                        ? arg
-                        : JSON.stringify(arg, null, 4);
-                }).join(' ') + '\n';
-                // scroll textarea to bottom
-                element.scrollTop = element.scrollHeight;
-            };
-        });
-        // init event-handling
-        ['change', 'click', 'keyup'].forEach(function (event) {
-            Array.from(document.querySelectorAll('.on' + event)).forEach(function (element) {
-                element.addEventListener(event, local.testRunBrowser);
-            });
-        });
-        // run tests
-        local.testRunBrowser();
         break;
 
 
@@ -405,7 +315,7 @@ instruction
 ```json
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "this zero-dependency package will provide a javascript-client for google-map's web-api, with a working demo",
+    "description": "this zero-dependency package will provide a javascript-client for google-maps' web-apis, with a working demo",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -439,7 +349,7 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.10.22"
+    "version": "2017.10.28"
 }
 ```
 
