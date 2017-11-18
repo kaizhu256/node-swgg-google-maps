@@ -1,7 +1,7 @@
 # swgg-google-maps
-this zero-dependency package will provide a javascript-client for google-maps' web-apis, with a working demo
+this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo
 
-# live demo
+# live web demo
 - [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
 
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithub.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
@@ -42,8 +42,6 @@ this zero-dependency package will provide a javascript-client for google-maps' w
 
 
 # cdn download
-- [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.swgg_google_maps.js](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.swgg_google_maps.js)
-
 - [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.swgg.swagger.json](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.swgg.swagger.json)
 
 
@@ -60,10 +58,9 @@ this zero-dependency package will provide a javascript-client for google-maps' w
 #### todo
 - none
 
-#### changelog for v2017.10.28
-- npm publish 2017.10.28
-- remove unused browser-code when building README.md
-- update docs
+#### changelog for v2017.11.17
+- npm publish 2017.11.17
+- add dynamic input validation
 - none
 
 #### this package requires
@@ -82,7 +79,7 @@ this zero-dependency package will provide a javascript-client for google-maps' w
 # 1. download standalone app
 curl -O https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.app.js
 # 2. run standalone app
-node ./assets.app.js
+PORT=8081 node ./assets.app.js
 # 3. open a browser to http://127.0.0.1:8081 and play with the web-demo
 # 4. edit file assets.app.js to suit your needs
 ```
@@ -315,7 +312,7 @@ instruction
 ```json
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "this zero-dependency package will provide a javascript-client for google-maps' web-apis, with a working demo",
+    "description": "this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -325,7 +322,8 @@ instruction
     },
     "homepage": "https://github.com/kaizhu256/node-swgg-google-maps",
     "keywords": [
-        "google-maps"
+        "google-maps",
+        "swagger-client"
     ],
     "license": "MIT",
     "main": "lib.swgg_google_maps.js",
@@ -349,7 +347,8 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
-    "version": "2017.10.28"
+    "swggTags0": "google-maps",
+    "version": "2017.11.17"
 }
 ```
 
