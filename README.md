@@ -58,9 +58,9 @@ this zero-dependency package will provide a swagger-client for google-maps' web-
 #### todo
 - none
 
-#### changelog for v2017.11.17
-- npm publish 2017.11.17
-- add dynamic input validation
+#### changelog for v2017.11.21
+- npm publish 2017.11.21
+- update swgg-client
 - none
 
 #### this package requires
@@ -348,7 +348,7 @@ instruction
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
     "swggTags0": "google-maps",
-    "version": "2017.11.17"
+    "version": "2017.11.21"
 }
 ```
 
