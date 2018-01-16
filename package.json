@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo",
+    "description": "this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -8,6 +8,7 @@
     "engines": {
         "node": ">=4.0"
     },
+    "githubRepoAlias": "swgg-io/node-swgg-google-maps",
     "homepage": "https://github.com/kaizhu256/node-swgg-google-maps",
     "keywords": [
         "google-maps",
@@ -35,6 +36,7 @@
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
+    "swggAll": "google-all",
     "swggTags0": "google-maps",
-    "version": "2017.11.21"
+    "version": "2018.1.15"
 }

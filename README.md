@@ -1,8 +1,8 @@
 # swgg-google-maps
-this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo
+this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo
 
 # live web demo
-- [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
+- [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
 
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithub.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
 
@@ -17,7 +17,6 @@ this zero-dependency package will provide a swagger-client for google-maps' web-
 | git-branch : | [master](https://github.com/kaizhu256/node-swgg-google-maps/tree/master) | [beta](https://github.com/kaizhu256/node-swgg-google-maps/tree/beta) | [alpha](https://github.com/kaizhu256/node-swgg-google-maps/tree/alpha)|
 |--:|:--|:--|:--|
 | test-server-github : | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/app)|
-| test-server-heroku : | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-master.herokuapp.com) | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-beta.herokuapp.com) | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-alpha.herokuapp.com)|
 | test-report : | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/test-report.html)|
 | coverage : | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/coverage.html/index.html)|
 | build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..alpha..travis-ci.org)|
@@ -58,9 +57,10 @@ this zero-dependency package will provide a swagger-client for google-maps' web-
 #### todo
 - none
 
-#### changelog for v2017.11.21
-- npm publish 2017.11.21
-- update swgg-client
+#### changelog for v2018.1.15
+- npm publish 2018.1.15
+- auto-sync master swagger.json from ../swgg-\$npm_package_swggAll/assets.swgg.swagger.json
+- disable heroku test-server
 - none
 
 #### this package requires
@@ -288,15 +288,6 @@ instruction
 1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)
 
-1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
-[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
-
-1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)
-
-1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)
-[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)
-
 1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)
 
@@ -312,7 +303,7 @@ instruction
 ```json
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo",
+    "description": "this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -320,6 +311,7 @@ instruction
     "engines": {
         "node": ">=4.0"
     },
+    "githubRepoAlias": "swgg-io/node-swgg-google-maps",
     "homepage": "https://github.com/kaizhu256/node-swgg-google-maps",
     "keywords": [
         "google-maps",
@@ -347,8 +339,9 @@ instruction
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
+    "swggAll": "google-all",
     "swggTags0": "google-maps",
-    "version": "2017.11.21"
+    "version": "2018.1.15"
 }
 ```
 
@@ -368,7 +361,7 @@ instruction
 
 shBuildCiAfter() {(set -e
     shDeployGithub
-    shDeployHeroku
+    # shDeployHeroku
     shReadmeTest example.sh
 )}
 

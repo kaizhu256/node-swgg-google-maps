@@ -124,18 +124,18 @@
         }
     },
     "externalDocs": {
-        "description": "find out more about google-maps' web-apis",
+        "description": "find out more about google-maps's web-apis",
         "url": "https://developers.google.com/maps/documentation/"
     },
     "info": {
-        "description": "this zero-dependency package will provide a swagger-client for google-maps' web-apis, with a working web-demo",
+        "description": "this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo",
         "title": "swgg-google-maps",
-        "version": "2017.11.21",
+        "version": "2018.1.15",
         "x-swgg-downloadStandaloneApp": "https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app/assets.app.js",
         "x-swgg-homepage": "https://github.com/kaizhu256/node-swgg-google-maps"
     },
     "parameters": {
-        "googleMapsApiKey": {
+        "google-maps.key": {
             "default": "xxxxxxxx",
             "description": "A valid API key to handle requests for this API. If you are using OAuth 2.0 service account credentials (recommended), do not supply this parameter.",
             "in": "query",
@@ -143,7 +143,7 @@
             "type": "string",
             "x-swgg-apiKey": true
         },
-        "googleMapsLanguage": {
+        "google-maps.language": {
             "description": "The language in which to return results.\n\nhttps://developers.google.com/maps/faq#languagesupport",
             "enum": [
                 "ar",
@@ -205,7 +205,7 @@
             "type": "string",
             "x-swgg-tags0": "google-maps"
         },
-        "googleMapsPlaceMaxprice": {
+        "google-maps.maxprice": {
             "description": "Restricts results to only those places within the specified range. Valid values range between 0 (most affordable) to 4 (most expensive), inclusive. The exact amount indicated by a specific value will vary from region to region.",
             "enum": [
                 0,
@@ -219,7 +219,7 @@
             "type": "integer",
             "x-swgg-tags0": "google-maps"
         },
-        "googleMapsPlaceMinprice": {
+        "google-maps.minprice": {
             "description": "Restricts results to only those places within the specified range. Valid values range between 0 (most affordable) to 4 (most expensive), inclusive. The exact amount indicated by a specific value will vary from region to region.",
             "enum": [
                 0,
@@ -233,113 +233,7 @@
             "type": "integer",
             "x-swgg-tags0": "google-maps"
         },
-        "googleMapsPlaceType": {
-            "description": "Restricts the results to places matching the specified type. Only one type may be specified (if more than one type is provided, all types following the first entry are ignored).\n\nhttps://developers.google.com/places/web-service/supported_types",
-            "enum": [
-                "accounting",
-                "airport",
-                "amusement_park",
-                "aquarium",
-                "art_gallery",
-                "atm",
-                "bakery",
-                "bank",
-                "bar",
-                "beauty_salon",
-                "bicycle_store",
-                "book_store",
-                "bowling_alley",
-                "bus_station",
-                "cafe",
-                "campground",
-                "car_dealer",
-                "car_rental",
-                "car_repair",
-                "car_wash",
-                "casino",
-                "cemetery",
-                "church",
-                "city_hall",
-                "clothing_store",
-                "convenience_store",
-                "courthouse",
-                "dentist",
-                "department_store",
-                "doctor",
-                "electrician",
-                "electronics_store",
-                "embassy",
-                "establishment",
-                "finance",
-                "fire_station",
-                "florist",
-                "food",
-                "funeral_home",
-                "furniture_store",
-                "gas_station",
-                "general_contractor",
-                "grocery_or_supermarket",
-                "gym",
-                "hair_care",
-                "hardware_store",
-                "health",
-                "hindu_temple",
-                "home_goods_store",
-                "hospital",
-                "insurance_agency",
-                "jewelry_store",
-                "laundry",
-                "lawyer",
-                "library",
-                "liquor_store",
-                "local_government_office",
-                "locksmith",
-                "lodging",
-                "meal_delivery",
-                "meal_takeaway",
-                "mosque",
-                "movie_rental",
-                "movie_theater",
-                "moving_company",
-                "museum",
-                "night_club",
-                "painter",
-                "park",
-                "parking",
-                "pet_store",
-                "pharmacy",
-                "physiotherapist",
-                "place_of_worship",
-                "plumber",
-                "police",
-                "post_office",
-                "real_estate_agency",
-                "restaurant",
-                "roofing_contractor",
-                "rv_park",
-                "school",
-                "shoe_store",
-                "shopping_mall",
-                "spa",
-                "stadium",
-                "storage",
-                "store",
-                "subway_station",
-                "synagogue",
-                "taxi_stand",
-                "train_station",
-                "transit_station",
-                "travel_agency",
-                "university",
-                "veterinary_care",
-                "zoo"
-            ],
-            "in": "query",
-            "name": "type",
-            "type": "string",
-            "x-swgg-tags0": "google-maps"
-        },
-        "googleMapsRegion": {
+        "google-maps.region": {
             "description": "The region code, specified as a ccTLD (\"top-level domain\") two-character value.\n\nhttps://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#Country_code_top-level_domains",
             "enum": [
                 "ac",
@@ -602,6 +496,112 @@
             "name": "region",
             "type": "string",
             "x-swgg-tags0": "google-maps"
+        },
+        "google-maps.type": {
+            "description": "Restricts the results to places matching the specified type. Only one type may be specified (if more than one type is provided, all types following the first entry are ignored).\n\nhttps://developers.google.com/places/web-service/supported_types",
+            "enum": [
+                "accounting",
+                "airport",
+                "amusement_park",
+                "aquarium",
+                "art_gallery",
+                "atm",
+                "bakery",
+                "bank",
+                "bar",
+                "beauty_salon",
+                "bicycle_store",
+                "book_store",
+                "bowling_alley",
+                "bus_station",
+                "cafe",
+                "campground",
+                "car_dealer",
+                "car_rental",
+                "car_repair",
+                "car_wash",
+                "casino",
+                "cemetery",
+                "church",
+                "city_hall",
+                "clothing_store",
+                "convenience_store",
+                "courthouse",
+                "dentist",
+                "department_store",
+                "doctor",
+                "electrician",
+                "electronics_store",
+                "embassy",
+                "establishment",
+                "finance",
+                "fire_station",
+                "florist",
+                "food",
+                "funeral_home",
+                "furniture_store",
+                "gas_station",
+                "general_contractor",
+                "grocery_or_supermarket",
+                "gym",
+                "hair_care",
+                "hardware_store",
+                "health",
+                "hindu_temple",
+                "home_goods_store",
+                "hospital",
+                "insurance_agency",
+                "jewelry_store",
+                "laundry",
+                "lawyer",
+                "library",
+                "liquor_store",
+                "local_government_office",
+                "locksmith",
+                "lodging",
+                "meal_delivery",
+                "meal_takeaway",
+                "mosque",
+                "movie_rental",
+                "movie_theater",
+                "moving_company",
+                "museum",
+                "night_club",
+                "painter",
+                "park",
+                "parking",
+                "pet_store",
+                "pharmacy",
+                "physiotherapist",
+                "place_of_worship",
+                "plumber",
+                "police",
+                "post_office",
+                "real_estate_agency",
+                "restaurant",
+                "roofing_contractor",
+                "rv_park",
+                "school",
+                "shoe_store",
+                "shopping_mall",
+                "spa",
+                "stadium",
+                "storage",
+                "store",
+                "subway_station",
+                "synagogue",
+                "taxi_stand",
+                "train_station",
+                "transit_station",
+                "travel_agency",
+                "university",
+                "veterinary_care",
+                "zoo"
+            ],
+            "in": "query",
+            "name": "type",
+            "type": "string",
+            "x-swgg-tags0": "google-maps"
         }
     },
     "paths": {
@@ -611,7 +611,7 @@
                 "operationId": "_2Fgeolocation_2Fv1_2Fgeolocate_20POST",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "description": "The request body must be formatted as JSON.",
@@ -640,10 +640,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fdirections_2Fjson_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "1600+Amphitheatre+Parkway,+Mountain+View,+CA",
@@ -721,7 +721,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     },
                     {
                         "default": 0,
@@ -794,10 +794,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fdistancematrix_2Fjson_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -851,7 +851,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -950,7 +950,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Felevation_2Fjson_23locations.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -986,7 +986,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Felevation_2Fjson_23path.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -1030,10 +1030,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fgeocode_2Fjson_23address.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "1600+Amphitheatre+Parkway,+Mountain+View,+CA",
@@ -1068,7 +1068,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1089,10 +1089,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fgeocode_2Fjson_23components.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -1120,7 +1120,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1141,10 +1141,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fgeocode_2Fjson_23latlng.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "37.421,-122.085",
@@ -1223,10 +1223,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fgeocode_2Fjson_23place_id.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "ChIJPzxqWQK6j4AR3OFRJ6LMaKo",
@@ -1305,10 +1305,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fautocomplete_2Fjson_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "Amoeba",
@@ -1393,10 +1393,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fdetails_2Fjson_23placeid.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "ChIJPzxqWQK6j4AR3OFRJ6LMaKo",
@@ -1407,7 +1407,7 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1428,10 +1428,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fdetails_2Fjson_23reference.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "CmRSAAAAjiEr2_A4yI-DyqGcfsceTv-IBJXHB5-W3ckmGk9QAYk4USgeV8ihBcGBEK5Z1w4ajRZNVAfSbROiKbbuniq0c9rIq_xqkrf_3HpZzX-pFJuJY3cBtG68LSAHzWXB8UzwEhAx04rgN0_WieYLfVp4K0duGhTU58LFaqwcaex73Kcyy0ghYOQTkg",
@@ -1441,11 +1441,7 @@
                         "type": "string"
                     },
                     {
-                        "description": "A string identifier that uniquely identifies a place.",
-                        "in": "query",
-                        "name": "region",
-                        "type": "string",
-                        "x-swgg-$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1466,7 +1462,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fnearbysearch_2Fjson_23pagetoken.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "default": "CpQCAgEAAFxg8o-eU7_uKn7Yqjana-HQIx1hr5BrT4zBaEko29ANsXtp9mrqN0yrKWhf-y2PUpHRLQb1GT-mtxNcXou8TwkXhi1Jbk-ReY7oulyuvKSQrw1lgJElggGlo0d6indiH1U-tDwquw4tU_UXoQ_sj8OBo8XBUuWjuuFShqmLMP-0W59Vr6CaXdLrF8M3wFR4dUUhSf5UC4QCLaOMVP92lyh0OdtF_m_9Dt7lz-Wniod9zDrHeDsz_by570K3jL1VuDKTl_U1cJ0mzz_zDHGfOUf7VU1kVIs1WnM9SGvnm8YZURLTtMLMWx8-doGUE56Af_VfKjGDYW361OOIj9GmkyCFtaoCmTMIr5kgyeUSnB-IEhDlzujVrV6O9Mt7N4DagR6RGhT3g1viYLS4kO5YindU6dm3GIof1Q",
@@ -1495,10 +1491,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fnearbysearch_2Fjson_23radius.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "37.421,-122.085",
@@ -1524,10 +1520,10 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMinprice"
+                        "$ref": "#/parameters/google-maps.minprice"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMaxprice"
+                        "$ref": "#/parameters/google-maps.maxprice"
                     },
                     {
                         "description": "Returns only those places that are open for business at the time the query is sent. Places that do not specify opening hours in the Google Places database will not be returned if you include this parameter in your query.",
@@ -1536,10 +1532,10 @@
                         "type": "boolean"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceType"
+                        "$ref": "#/parameters/google-maps.type"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1560,10 +1556,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fnearbysearch_2Fjson_23rankby.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "37.421,-122.085",
@@ -1593,10 +1589,10 @@
                         "type": "string"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMinprice"
+                        "$ref": "#/parameters/google-maps.minprice"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMaxprice"
+                        "$ref": "#/parameters/google-maps.maxprice"
                     },
                     {
                         "description": "Returns only those places that are open for business at the time the query is sent. Places that do not specify opening hours in the Google Places database will not be returned if you include this parameter in your query.",
@@ -1605,10 +1601,10 @@
                         "type": "boolean"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceType"
+                        "$ref": "#/parameters/google-maps.type"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsRegion"
+                        "$ref": "#/parameters/google-maps.region"
                     }
                 ],
                 "responses": {
@@ -1629,7 +1625,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fphoto_23maxheight.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "default": "CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU",
@@ -1666,7 +1662,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fphoto_23maxwidth.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "default": "CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU",
@@ -1703,10 +1699,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Fqueryautocomplete_2Fjson_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "Amoeba",
@@ -1755,7 +1751,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Ftextsearch_2Fjson_23pagetoken.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "default": "CpQCAgEAAFxg8o-eU7_uKn7Yqjana-HQIx1hr5BrT4zBaEko29ANsXtp9mrqN0yrKWhf-y2PUpHRLQb1GT-mtxNcXou8TwkXhi1Jbk-ReY7oulyuvKSQrw1lgJElggGlo0d6indiH1U-tDwquw4tU_UXoQ_sj8OBo8XBUuWjuuFShqmLMP-0W59Vr6CaXdLrF8M3wFR4dUUhSf5UC4QCLaOMVP92lyh0OdtF_m_9Dt7lz-Wniod9zDrHeDsz_by570K3jL1VuDKTl_U1cJ0mzz_zDHGfOUf7VU1kVIs1WnM9SGvnm8YZURLTtMLMWx8-doGUE56Af_VfKjGDYW361OOIj9GmkyCFtaoCmTMIr5kgyeUSnB-IEhDlzujVrV6O9Mt7N4DagR6RGhT3g1viYLS4kO5YindU6dm3GIof1Q",
@@ -1784,10 +1780,10 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Ftextsearch_2Fjson_23query.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
                         "default": "123 Main Street",
@@ -1812,10 +1808,10 @@
                         "type": "integer"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMinprice"
+                        "$ref": "#/parameters/google-maps.minprice"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMaxprice"
+                        "$ref": "#/parameters/google-maps.maxprice"
                     },
                     {
                         "description": "Returns only those places that are open for business at the time the query is sent. Places that do not specify opening hours in the Google Places database will not be returned if you include this parameter in your query.",
@@ -1824,7 +1820,7 @@
                         "type": "boolean"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceType"
+                        "$ref": "#/parameters/google-maps.type"
                     }
                 ],
                 "responses": {
@@ -1845,13 +1841,13 @@
                 "operationId": "_2Fmaps_2Fapi_2Fplace_2Ftextsearch_2Fjson_23type.required_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceType"
+                        "$ref": "#/parameters/google-maps.type"
                     },
                     {
                         "default": "37.421,-122.085",
@@ -1868,10 +1864,10 @@
                         "type": "integer"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMinprice"
+                        "$ref": "#/parameters/google-maps.minprice"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsPlaceMaxprice"
+                        "$ref": "#/parameters/google-maps.maxprice"
                     },
                     {
                         "description": "Returns only those places that are open for business at the time the query is sent. Places that do not specify opening hours in the Google Places database will not be returned if you include this parameter in your query.",
@@ -1898,7 +1894,7 @@
                 "operationId": "_2Fmaps_2Fapi_2Ftimezone_2Fjson_20GET",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "default": "-33.86,151.20",
@@ -1915,7 +1911,7 @@
                         "type": "integer"
                     },
                     {
-                        "$ref": "#/parameters/googleMapsLanguage"
+                        "$ref": "#/parameters/google-maps.language"
                     }
                 ],
                 "responses": {
@@ -1936,7 +1932,7 @@
                 "operationId": "_2Fv1_2FnearestRoads_20POST",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -1973,7 +1969,7 @@
                 "operationId": "_2Fv1_2FsnapToRoads_20POST",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -2016,7 +2012,7 @@
                 "operationId": "_2Fv1_2FspeedLimits_23path.required_20POST",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "pipes",
@@ -2064,7 +2060,7 @@
                 "operationId": "_2Fv1_2FspeedLimits_23placeId.required_20POST",
                 "parameters": [
                     {
-                        "$ref": "#/parameters/googleMapsApiKey"
+                        "$ref": "#/parameters/google-maps.key"
                     },
                     {
                         "collectionFormat": "multi",
@@ -2121,7 +2117,7 @@
     "x-swgg-tags0-override": {
         "google-maps": {
             "externalDocs": {
-                "description": "find out more about google-maps' web-apis",
+                "description": "find out more about google-maps's web-apis",
                 "url": "https://developers.google.com/maps/documentation/"
             }
         },
