@@ -1,9 +1,9 @@
-<svg height="2286" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2286" fill="#555" width="720"></rect>
+<svg height="2126" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2126" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2018-02-15T15:33:58.969Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTestPublished] - 2018-02-17T00:57:05.107Z - npm-testing /tmp/npmTestPublished/nod\</tspan>
 <tspan x="10" y="58">e_modules/swgg-google-maps</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -15,7 +15,7 @@
 
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
 
-<tspan x="10" y="154">&gt; server listening on http-port 58717</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 50430</tspan>
 
 <tspan x="10" y="170">apidocCreate - readExample /tmp/npmTestPublished/node_modules/swgg-google-maps/package.json</tspan>
 
@@ -58,187 +58,172 @@
 <tspan x="10" y="490"></tspan>
 
 <tspan x="10" y="506">browserTest - created electron entry-page /tmp/npmTestPublished/node_modules/swgg-google-maps/tm\</tspan>
-<tspan x="10" y="522">p/electron.1619a19db660.9e68c0e9e1563.html</tspan>
+<tspan x="10" y="522">p/electron.161a143bf970.e005b5d3dda82.html</tspan>
 
 <tspan x="10" y="538"></tspan>
 
-<tspan x="10" y="554">&gt; server listening on http-port 59182</tspan>
+<tspan x="10" y="554">&gt; server listening on http-port 44676</tspan>
 
 <tspan x="10" y="570">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="586">[5262:0215/153401.741679:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
-<tspan x="10" y="602">ted</tspan>
+<tspan x="10" y="586">[5143:0217/005707.551691:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="602">hreads in process gpu-process. </tspan>
 
-<tspan x="10" y="618">[5262:0215/153401.741748:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="618">[5113:0217/005707.558228:WARNING:audio_manager.cc(317)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="634">ted</tspan>
 
-<tspan x="10" y="650">[5293:0215/153401.766752:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
-<tspan x="10" y="666">hreads in process gpu-process. </tspan>
+<tspan x="10" y="650">[5113:0217/005707.558297:WARNING:audio_manager.cc(278)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="666">ted</tspan>
 
-<tspan x="10" y="682">[5262:0215/153401.870749:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="698">l.</tspan>
+<tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="714">[5262:0215/153401.871246:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="730">l.</tspan>
+<tspan x="10" y="698">browserTest - opened http://127.0.0.1:50430/index.default.html?modeTest=1</tspan>
 
-<tspan x="10" y="746">[5262:0215/153401.871630:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="762">l.</tspan>
+<tspan x="10" y="714"></tspan>
 
-<tspan x="10" y="778">[5262:0215/153401.872078:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="794">l.</tspan>
+<tspan x="10" y="730">[5113:0217/005708.299524:INFO:CONSOLE(71)] "Uncaught TypeError: Cannot read property '/assets.sw\</tspan>
+<tspan x="10" y="746">gg.html' of undefined", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/e\</tspan>
+<tspan x="10" y="762">lectron.161a143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="810">[5262:0215/153401.872603:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
-<tspan x="10" y="826">l.</tspan>
+<tspan x="10" y="778">[5113:0217/005708.319129:INFO:CONSOLE(71)] "[browser test-case 1 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="794">idoc_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1\</tspan>
+<tspan x="10" y="810">61a143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="842"></tspan>
+<tspan x="10" y="826">[5113:0217/005708.321501:INFO:CONSOLE(71)] "[browser test-case 2 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="842">p_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a\</tspan>
+<tspan x="10" y="858">143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="858">browserTest - opened http://127.0.0.1:58717/index.default.html?modeTest=1</tspan>
+<tspan x="10" y="874">[5113:0217/005708.323607:INFO:CONSOLE(71)] "[browser test-case 3 of 8 passed] - testCase_buildCu\</tspan>
+<tspan x="10" y="890">stomOrg_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electro\</tspan>
+<tspan x="10" y="906">n.161a143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="874"></tspan>
+<tspan x="10" y="922">[5113:0217/005708.325213:INFO:CONSOLE(71)] "[browser test-case 4 of 8 passed] - testCase_buildLi\</tspan>
+<tspan x="10" y="938">b_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a\</tspan>
+<tspan x="10" y="954">143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="890">[5262:0215/153402.567096:INFO:CONSOLE(71)] "Uncaught TypeError: Cannot read property '/assets.sw\</tspan>
-<tspan x="10" y="906">gg.html' of undefined", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/e\</tspan>
-<tspan x="10" y="922">lectron.1619a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="970">[5113:0217/005708.325254:INFO:CONSOLE(71)] "[browser test-case 5 of 8 passed] - testCase_buildRe\</tspan>
+<tspan x="10" y="986">adme_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1\</tspan>
+<tspan x="10" y="1002">61a143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="938">[5262:0215/153402.588510:INFO:CONSOLE(71)] "[browser test-case 1 of 8 passed] - testCase_buildAp\</tspan>
-<tspan x="10" y="954">idoc_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1\</tspan>
-<tspan x="10" y="970">619a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1018">[5113:0217/005708.327738:INFO:CONSOLE(71)] "[browser test-case 6 of 8 passed] - testCase_buildTe\</tspan>
+<tspan x="10" y="1034">st_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161\</tspan>
+<tspan x="10" y="1050">a143bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="986">[5262:0215/153402.590812:INFO:CONSOLE(71)] "[browser test-case 2 of 8 passed] - testCase_buildAp\</tspan>
-<tspan x="10" y="1002">p_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619\</tspan>
-<tspan x="10" y="1018">a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1066">[5113:0217/005708.329885:INFO:CONSOLE(71)] "[browser test-case 7 of 8 passed] - testCase_nop_def\</tspan>
+<tspan x="10" y="1082">ault", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a143bf\</tspan>
+<tspan x="10" y="1098">970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="1034">[5262:0215/153402.592938:INFO:CONSOLE(71)] "[browser test-case 3 of 8 passed] - testCase_buildCu\</tspan>
-<tspan x="10" y="1050">stomOrg_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electro\</tspan>
-<tspan x="10" y="1066">n.1619a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1114">[5113:0217/005708.331123:INFO:CONSOLE(71)] "[browser test-case 8 of 8 passed] - testCase_webpage\</tspan>
+<tspan x="10" y="1130">_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a1\</tspan>
+<tspan x="10" y="1146">43bf970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="1082">[5262:0215/153402.595061:INFO:CONSOLE(71)] "[browser test-case 4 of 8 passed] - testCase_buildLi\</tspan>
-<tspan x="10" y="1098">b_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619\</tspan>
-<tspan x="10" y="1114">a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1162">[5113:0217/005709.333711:INFO:CONSOLE(71)] "----------|-----------|-----------|-----------|-----\</tspan>
+<tspan x="10" y="1178">------|</tspan>
 
-<tspan x="10" y="1130">[5262:0215/153402.595099:INFO:CONSOLE(71)] "[browser test-case 5 of 8 passed] - testCase_buildRe\</tspan>
-<tspan x="10" y="1146">adme_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1\</tspan>
-<tspan x="10" y="1162">619a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1194">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="1178">[5262:0215/153402.598195:INFO:CONSOLE(71)] "[browser test-case 6 of 8 passed] - testCase_buildTe\</tspan>
-<tspan x="10" y="1194">st_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161\</tspan>
-<tspan x="10" y="1210">9a19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1210">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1226">[5262:0215/153402.603547:INFO:CONSOLE(71)] "[browser test-case 7 of 8 passed] - testCase_nop_def\</tspan>
-<tspan x="10" y="1242">ault", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619a19db\</tspan>
-<tspan x="10" y="1258">660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1226">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1274">[5262:0215/153402.605965:INFO:CONSOLE(71)] "[browser test-case 8 of 8 passed] - testCase_webpage\</tspan>
-<tspan x="10" y="1290">_default", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619a\</tspan>
-<tspan x="10" y="1306">19db660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1242">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1322">[5262:0215/153403.609168:INFO:CONSOLE(71)] "----------|-----------|-----------|-----------|-----\</tspan>
-<tspan x="10" y="1338">------|</tspan>
+<tspan x="10" y="1258">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1354">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="1274">", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a143bf970.\</tspan>
+<tspan x="10" y="1290">e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="1370">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1306">[5113:0217/005709.337878:INFO:CONSOLE(71)] "created coverage file /tmp/build/coverage.html/index\</tspan>
+<tspan x="10" y="1322">.html", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.161a143b\</tspan>
+<tspan x="10" y="1338">f970.e005b5d3dda82.html (71)</tspan>
 
-<tspan x="10" y="1386">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1354">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="1402">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1370"></tspan>
 
-<tspan x="10" y="1418">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1386">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
+<tspan x="10" y="1402">ld/screenshot.npmTestPublished.browser.%2F.png</tspan>
 
-<tspan x="10" y="1434">", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619a19db660.\</tspan>
-<tspan x="10" y="1450">9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1418"></tspan>
 
-<tspan x="10" y="1466">[5262:0215/153403.615423:INFO:CONSOLE(71)] "created coverage file /tmp/build/coverage.html/index\</tspan>
-<tspan x="10" y="1482">.html", source: file:///tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/electron.1619a19d\</tspan>
-<tspan x="10" y="1498">b660.9e68c0e9e1563.html (71)</tspan>
+<tspan x="10" y="1434">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
+<tspan x="10" y="1450">ld/screenshot.npmTestPublished.browser.%2F.html</tspan>
 
-<tspan x="10" y="1514">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="1466"></tspan>
+
+<tspan x="10" y="1482">browserTest - merged coverage from file /tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/\</tspan>
+<tspan x="10" y="1498">coverage.npmTestPublished.browser.%2Findex.default.html.json</tspan>
+
+<tspan x="10" y="1514"></tspan>
 
 <tspan x="10" y="1530"></tspan>
 
-<tspan x="10" y="1546">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
-<tspan x="10" y="1562">ld/screenshot.npmTestPublished.browser.%2F.png</tspan>
+<tspan x="10" y="1546">browserTest - merged test-report from file /tmp/npmTestPublished/node_modules/swgg-google-maps/t\</tspan>
+<tspan x="10" y="1562">mp/test-report.npmTestPublished.browser.%2Findex.default.html.json</tspan>
 
 <tspan x="10" y="1578"></tspan>
 
-<tspan x="10" y="1594">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
-<tspan x="10" y="1610">ld/screenshot.npmTestPublished.browser.%2F.html</tspan>
+<tspan x="10" y="1594">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="1626"></tspan>
+<tspan x="10" y="1610">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1642">browserTest - merged coverage from file /tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/\</tspan>
-<tspan x="10" y="1658">coverage.npmTestPublished.browser.%2Findex.default.html.json</tspan>
+<tspan x="10" y="1626">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="1674"></tspan>
+<tspan x="10" y="1642">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1690"></tspan>
+<tspan x="10" y="1658">   swgg-google-maps/          |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1706">browserTest - merged test-report from file /tmp/npmTestPublished/node_modules/swgg-google-maps/t\</tspan>
-<tspan x="10" y="1722">mp/test-report.npmTestPublished.browser.%2Findex.default.html.json</tspan>
+<tspan x="10" y="1674">      example.js              |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1738"></tspan>
+<tspan x="10" y="1690">      lib.swgg_google_maps.js |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1754">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="1706">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1770">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1722">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1786">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="1738">All files                     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1802">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1754">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1818">   swgg-google-maps/          |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1770"></tspan>
 
-<tspan x="10" y="1834">      example.js              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1786">created coverage file /tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/build/coverage.htm\</tspan>
+<tspan x="10" y="1802">l/index.html</tspan>
 
-<tspan x="10" y="1850">      lib.swgg_google_maps.js |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1818"></tspan>
 
-<tspan x="10" y="1866">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1834">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1882">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1850">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="1866">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.15 Safari/537.36 - 20\</tspan>
+<tspan x="10" y="1882">18-02-17T00:57:08.263Z</tspan>
 
-<tspan x="10" y="1898">All files                     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1898">|      12 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="1914">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1914">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="1930"></tspan>
+<tspan x="10" y="1930">| test-report - npmTestPublished - node - linux v6.13.0 - 2018-02-17T00:57:05.414Z</tspan>
 
-<tspan x="10" y="1946">created coverage file /tmp/npmTestPublished/node_modules/swgg-google-maps/tmp/build/coverage.htm\</tspan>
-<tspan x="10" y="1962">l/index.html</tspan>
+<tspan x="10" y="1946">|   17133 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="1962">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="1978"></tspan>
 
-<tspan x="10" y="1994">-------------------------------------------------------</tspan>
+<tspan x="10" y="1994">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
+<tspan x="10" y="2010">t.html</tspan>
 
-<tspan x="10" y="2010">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
-<tspan x="10" y="2026">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.15 Safari/537.36 - 20\</tspan>
-<tspan x="10" y="2042">18-02-15T15:34:02.531Z</tspan>
+<tspan x="10" y="2026"></tspan>
 
-<tspan x="10" y="2058">|      18 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2042"></tspan>
 
-<tspan x="10" y="2074">-------------------------------------------------------</tspan>
+<tspan x="10" y="2058">npmTestPublished - 0 failed tests</tspan>
 
-<tspan x="10" y="2090">| test-report - npmTestPublished - node - linux v6.13.0 - 2018-02-15T15:33:59.359Z</tspan>
+<tspan x="10" y="2074"></tspan>
 
-<tspan x="10" y="2106">|   17353 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2090"></tspan>
 
-<tspan x="10" y="2122">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="2138"></tspan>
-
-<tspan x="10" y="2154">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
-<tspan x="10" y="2170">t.html</tspan>
-
-<tspan x="10" y="2186"></tspan>
-
-<tspan x="10" y="2202"></tspan>
-
-<tspan x="10" y="2218">npmTestPublished - 0 failed tests</tspan>
-
-<tspan x="10" y="2234"></tspan>
-
-<tspan x="10" y="2250"></tspan>
-
-<tspan x="10" y="2266">[MODE_BUILD=npmTestPublished] - 2018-02-15T15:34:18.716Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2106">[MODE_BUILD=npmTestPublished] - 2018-02-17T00:57:24.530Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>

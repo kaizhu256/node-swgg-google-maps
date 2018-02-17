@@ -14940,6 +14940,11 @@ body > button {\n\
 button {\n\
     cursor: pointer;\n\
 }\n\
+code,\n\
+pre,\n\
+textarea {\n\
+    font-family: Menlo, Consolas, Courier New, monospace;\n\
+}\n\
 pre {\n\
     overflow-wrap: break-word;\n\
     white-space: pre-wrap;\n\
@@ -14982,7 +14987,6 @@ pre {\n\
 /*csslint\n\
 */\n\
 textarea {\n\
-    font-family: monospace;\n\
     height: 10rem;\n\
     width: 100%;\n\
 }\n\
@@ -20237,44 +20241,42 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
             // start repl-debugger
             local.replStart();
             // debug dir
-            [__dirname, process.cwd()].forEach(function (dir) {
-                local.fs.readdirSync(dir).forEach(function (file) {
-                    file = dir + '/' + file;
-                    // if the file is modified, then restart the process
-                    local.onFileModifiedRestart(file);
-                    switch (local.path.basename(file)) {
-                    // swagger-validate assets.swgg.swagger.json
-                    case 'assets.swgg.swagger.json':
-                        local.fs.readFile(file, 'utf8', function (error, data) {
-                            local.tryCatchOnError(function () {
-                                // validate no error occurred
-                                local.assert(!error, error);
-                                local.swgg.swaggerValidateJson(JSON.parse(data));
-                            }, local.onErrorDefault);
-                        });
-                        break;
+            local.fs.readdirSync(process.cwd()).forEach(function (file) {
+                file = process.cwd() + '/' + file;
+                // if the file is modified, then restart the process
+                local.onFileModifiedRestart(file);
+                switch (local.path.basename(file)) {
+                // swagger-validate assets.swgg.swagger.json
+                case 'assets.swgg.swagger.json':
+                    local.fs.readFile(file, 'utf8', function (error, data) {
+                        local.tryCatchOnError(function () {
+                            // validate no error occurred
+                            local.assert(!error, error);
+                            local.swgg.swaggerValidateJson(JSON.parse(data));
+                        }, local.onErrorDefault);
+                    });
+                    break;
+                }
+                switch (local.path.extname(file)) {
+                case '.css':
+                case '.html':
+                case '.js':
+                case '.json':
+                    if ((/\brollup\b/).test(file)) {
+                        return;
                     }
-                    switch (local.path.extname(file)) {
-                    case '.css':
-                    case '.html':
-                    case '.js':
-                    case '.json':
-                        if ((/\brollup\b/).test(file)) {
-                            return;
-                        }
-                        // jslint file
-                        local.fs.readFile(file, 'utf8', function (error, data) {
-                            local.jslintAndPrintConditional(!error && data, file);
-                        });
-                        break;
-                    case '.sh':
-                        // jslint file
-                        local.fs.readFile(file, 'utf8', function (error, data) {
-                            local.jslintAndPrintConditional(!error && data, file + '.html');
-                        });
-                        break;
-                    }
-                });
+                    // jslint file
+                    local.fs.readFile(file, 'utf8', function (error, data) {
+                        local.jslintAndPrintConditional(!error && data, file);
+                    });
+                    break;
+                case '.sh':
+                    // jslint file
+                    local.fs.readFile(file, 'utf8', function (error, data) {
+                        local.jslintAndPrintConditional(!error && data, file + '.html');
+                    });
+                    break;
+                }
             });
             if (local.global.utility2_rollup || local.env.npm_config_mode_start) {
                 // init assets
@@ -20455,6 +20457,9 @@ instruction\n\
         };
 
         local.serverLog = function (options) {
+        /*
+         * this function will log server operations
+         */
             console.error('serverLog - ' + JSON.stringify(options));
         };
 
@@ -23563,7 +23568,6 @@ local.assetsDict['/assets.swgg.html'] = local.assetsDict['/assets.index.default.
 }\n\
 .swggUiContainer pre,\n\
 .swggUiContainer textarea {\n\
-    font-family: Menlo, Monaco, Consolas, Courier New, monospace;\n\
     font-size: small;\n\
     line-height: 1.25rem;\n\
     max-height: 50rem;\n\
