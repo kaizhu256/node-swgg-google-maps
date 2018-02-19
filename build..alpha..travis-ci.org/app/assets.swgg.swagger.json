@@ -129,10 +129,10 @@
         "url": "https://developers.google.com/maps/documentation/"
     },
     "info": {
-        "description": "this zero-dependency package will provide a swagger-client for google-all's web-apis, with a working web-demo",
+        "description": "this zero-dependency package will provide a (nodejs-compatible) swagger-client for google-all's web-apis, with a working web-demo",
         "title": "swgg-google-maps",
         "version": "2018.1.16",
-        "x-swgg-description": "this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo",
+        "x-swgg-description": "this zero-dependency package will provide a (nodejs-compatible) swagger-client for google-maps's web-apis, with a working web-demo",
         "x-swgg-downloadStandaloneApp": "https://kaizhu256.github.io/node-swgg-google-all/build..beta..travis-ci.org/app/assets.app.js",
         "x-swgg-homepage": "https://github.com/kaizhu256/node-swgg-google-maps"
     },

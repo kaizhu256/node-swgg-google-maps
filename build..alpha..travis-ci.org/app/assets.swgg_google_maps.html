@@ -7,14 +7,14 @@
 <title>swgg</title>
 <style>
 /*csslint
-    box-sizing: false,
-    universal-selector: false
 */
+/* jslint-ignore-begin */
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
+/* jslint-ignore-end */
 body {
     background: #dde;
     font-family: Arial, Helvetica, sans-serif;
@@ -111,6 +111,7 @@ pre {
     cursor: pointer;
 }
 .swggUiContainer button {
+    border-radius: 5px;
     font-size: medium;
 }
 .swggUiContainer input,
@@ -124,11 +125,12 @@ pre {
     line-height: 1.25rem;
     max-height: 50rem;
     overflow: auto;
-    white-space: nowrap;
 }
 .swggUiContainer pre {
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
+    white-space: pre;
+}
+.swggUiContainer textarea {
+    white-space: nowrap;
 }
 .swggUiContainer .markdown pre {
     max-height: none;
@@ -175,7 +177,7 @@ pre {
 }
 .swggUiContainer .td {
     overflow: auto;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .swggUiContainer .td input,
 .swggUiContainer .td pre,
@@ -185,16 +187,14 @@ pre {
 }
 .swggUiContainer > .thead > .td1 {
     font-size: x-large;
-    text-decoration: none;
 }
 
 
 
 /* important style */
 /* background */
-.swggUiContainer button,
-.swggUiContainer .resourceDescription {
-    background: #373;
+.swggUiContainer button {
+    background: #393;
 }
 .swggUiContainer pre,
 .swggUiContainer .operationDescription {
@@ -226,6 +226,9 @@ pre {
 }
 .swggUiContainer .operation {
     background: #dfd;
+}
+.swggUiContainer .resourceDescription {
+    background: #373;
 }
 .swggUiContainer .resourceDescription pre {
     background: #777;
@@ -261,7 +264,7 @@ pre {
 .swggUiContainer > .thead > .td1,
 .swggUiContainer > .thead > .td4,
 .swggUiContainer > .thead > .td5 {
-    color: #fff;
+    color: #eee;
 }
 .swggUiContainer .errorMessage {
     color: #c00;
@@ -272,11 +275,11 @@ pre {
 .swggUiContainer .resourceDescription a {
     color: #7d7;
 }
-.swggUiContainer .resourceDescription strong {
-    color: #7f7;
-}
-.swggUiContainer .resourceDescription > code {
+.swggUiContainer .resourceDescription code {
     color: #ddf;
+}
+.swggUiContainer .resourceDescription strong {
+    color: #bf0;
 }
 .swggUiContainer .styleColor777 {
     color: #777;
@@ -404,14 +407,14 @@ pre {
     color: #33d;
 }
 .swggUiContainer button:hover {
-    background: #33d;
+    background: #77f;
 }
 .swggUiContainer .operation > .thead:hover,
 .swggUiContainer .resource > .thead > .td:hover {
     background: #bbf;
 }
 .swggUiContainer .resourceDescription a:hover {
-    color: #7f7;
+    color: #bbf;
 }
 
 
