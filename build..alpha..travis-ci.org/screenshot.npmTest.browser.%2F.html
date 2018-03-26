@@ -3,8 +3,8 @@
         &quot;https://github.com/kaizhu256/node-swgg-google-maps&quot;: &quot;swgg-google-maps (v2018.1.16)&quot;,
         &quot;https://github.com/kaizhu256/node-utility2&quot;: &quot;utility2&quot;
     },
-    &quot;href&quot;: &quot;http://127.0.0.1:61517/index.default.html?modeTest=1&quot;,
-    &quot;url&quot;: &quot;http://127.0.0.1:61517/index.default.html&quot;,
+    &quot;href&quot;: &quot;http://127.0.0.1:47024/index.default.html?modeTest=1&quot;,
+    &quot;url&quot;: &quot;http://127.0.0.1:47024/index.default.html&quot;,
     &quot;bodyTextContent&quot;: &quot;&quot;
 }"><head>
 <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 <!-- "assets.index.default.template.html" -->
 <title>swgg-google-maps (v2018.1.16)</title>
 <style>
+/* jslint-utility2 */
 /*csslint
 */
 /* jslint-ignore-begin */
@@ -21,36 +22,6 @@
     box-sizing: border-box;
 }
 /* jslint-ignore-end */
-body {
-    background: #dde;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 40px;
-}
-body > a,
-body > button,
-body > div,
-body > input,
-body > pre,
-body > select,
-body > span,
-body > textarea {
-    margin-bottom: 20px;
-}
-body > button {
-    width: 20rem;
-}
-button {
-    cursor: pointer;
-}
-code,
-pre,
-textarea {
-    font-family: Menlo, Consolas, Courier New, monospace;
-}
-pre {
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
-}
 @keyframes uiAnimateShake {
     0%, 50% {
         transform: translateX(10px);
@@ -62,6 +33,67 @@ pre {
         transform: translateX(0);
     }
 }
+@keyframes uiAnimateSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a {
+    overflow-wrap: break-word;
+}
+body > div,
+body > pre,
+body > textarea,
+body > .button {
+    margin-bottom: 20px;
+}
+body > textarea {
+    height: 10rem;
+    width: 100%;
+}
+body > textarea[readonly] {
+    background: #ddd;
+}
+body > .button {
+    width: 20rem;
+}
+code,
+pre,
+textarea {
+    font-family: Consolas, Menlo, monospace;
+    font-size: small;
+}
+pre {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+textarea {
+    overflow: auto;
+    white-space: pre;
+}
+.button {
+    background-color: #fff;
+    border: 1px solid;
+    border-bottom-color: rgb(186, 186, 186);
+    border-left-color: rgb(209, 209, 209);
+    border-radius: 4px;
+    border-right-color: rgb(209, 209, 209);
+    border-top-color: rgb(216, 216, 216);
+    color: #00d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 7px 3px 7px;
+    text-align: center;
+    text-decoration: underline;
+}
 .uiAnimateShake {
     animation-duration: 500ms;
     animation-name: uiAnimateShake;
@@ -69,10 +101,6 @@ pre {
 .uiAnimateSlide {
     overflow-y: hidden;
     transition: max-height ease-in 250ms, min-height ease-in 250ms, padding-bottom ease-in 250ms, padding-top ease-in 250ms;
-}
-@keyframes uiAnimateSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 .utility2FooterDiv {
     text-align: center;
@@ -85,21 +113,12 @@ pre {
     width: 0;
 }
 </style>
-<style>
-/*csslint
-*/
-textarea {
-    height: 10rem;
-    width: 100%;
-}
-textarea[readonly] {
-    background: #ddd;
-}
-</style>
 </head>
-<body>
+<body style="background: #ddf; font-family: Arial, Helvetica, sans-serif; margin: 0 40px;">
 <div id="ajaxProgressDiv1" style="background: transparent; height: 2px; left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
+<code style="display: none;"></code><div class="button uiAnimateShake uiAnimateSlide utility2FooterDiv zeroPixel" style="display: none;"></div><pre style="display: none;"></pre><textarea readonly="" style="display: none;"></textarea>
+<code style="display: none;"></code><div class="button uiAnimateShake uiAnimateSlide utility2FooterDiv zeroPixel" style="display: none;"></div><pre style="display: none;"></pre><textarea readonly="" style="display: none;"></textarea>
 <script></script>
 <h1>
 
@@ -112,10 +131,11 @@ textarea[readonly] {
 </h1>
 <h3>this zero-dependency package will provide a (nodejs-compatible) swagger-client for google-maps's web-apis, with a working web-demo</h3>
 
-<h4><a download="" href="http://127.0.0.1:61517/assets.app.js">[download standalone app]</a></h4>
-<button class="onclick onreset" id="testRunButton1">run internal test</button><br>
+<a class="button" download="" href="http://127.0.0.1:47024/assets.app.js">download standalone app</a><br>
+<button class="button onclick onreset" id="testRunButton1">run internal test</button><br>
 <div class="uiAnimateSlide" id="testReportDiv1" style="max-height: 100%;"><div class="testReportDiv">
 <style>
+/* jslint-utility2 */
 /*csslint
 */
 /* jslint-ignore-begin */
@@ -125,36 +145,6 @@ textarea[readonly] {
     box-sizing: border-box;
 }
 /* jslint-ignore-end */
-body {
-    background: #dde;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 40px;
-}
-body > a,
-body > button,
-body > div,
-body > input,
-body > pre,
-body > select,
-body > span,
-body > textarea {
-    margin-bottom: 20px;
-}
-body > button {
-    width: 20rem;
-}
-button {
-    cursor: pointer;
-}
-code,
-pre,
-textarea {
-    font-family: Menlo, Consolas, Courier New, monospace;
-}
-pre {
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
-}
 @keyframes uiAnimateShake {
     0%, 50% {
         transform: translateX(10px);
@@ -166,6 +156,67 @@ pre {
         transform: translateX(0);
     }
 }
+@keyframes uiAnimateSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a {
+    overflow-wrap: break-word;
+}
+body > div,
+body > pre,
+body > textarea,
+body > .button {
+    margin-bottom: 20px;
+}
+body > textarea {
+    height: 10rem;
+    width: 100%;
+}
+body > textarea[readonly] {
+    background: #ddd;
+}
+body > .button {
+    width: 20rem;
+}
+code,
+pre,
+textarea {
+    font-family: Consolas, Menlo, monospace;
+    font-size: small;
+}
+pre {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+textarea {
+    overflow: auto;
+    white-space: pre;
+}
+.button {
+    background-color: #fff;
+    border: 1px solid;
+    border-bottom-color: rgb(186, 186, 186);
+    border-left-color: rgb(209, 209, 209);
+    border-radius: 4px;
+    border-right-color: rgb(209, 209, 209);
+    border-top-color: rgb(216, 216, 216);
+    color: #00d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 7px 3px 7px;
+    text-align: center;
+    text-decoration: underline;
+}
 .uiAnimateShake {
     animation-duration: 500ms;
     animation-name: uiAnimateShake;
@@ -173,10 +224,6 @@ pre {
 .uiAnimateSlide {
     overflow-y: hidden;
     transition: max-height ease-in 250ms, min-height ease-in 250ms, padding-bottom ease-in 250ms, padding-top ease-in 250ms;
-}
-@keyframes uiAnimateSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 .utility2FooterDiv {
     text-align: center;
@@ -190,6 +237,7 @@ pre {
 }
 </style>
 <style>
+/* jslint-utility2 */
 /*csslint
 */
 .testReportDiv {
@@ -243,14 +291,16 @@ pre {
 }
 </style>
 <h1>test-report for
-    <a href="https://github.com/kaizhu256/node-swgg-google-maps">swgg-google-maps (v2018.1.16)</a>
+    <a href="https://github.com/kaizhu256/node-swgg-google-maps">
+        swgg-google-maps (v2018.1.16)
+    </a>
 </h1>
 <div class="platform summary">
 <h2>summary</h2>
 <h4>
     <span>version</span>-
         2018.1.16<br>
-    <span>test date</span>- 2018-02-19T09:44:55.512Z<br>
+    <span>test date</span>- 2018-03-26T13:48:27.438Z<br>
     <span>commit info</span>-
         
         undefined<br>
@@ -266,7 +316,7 @@ pre {
     </tr>
 </thead>
 <tbody><tr>
-    <td>1007 ms</td>
+    <td>1005 ms</td>
     <td class="testPassed">0</td>
     <td>8</td>
     <td>0</td>
@@ -276,9 +326,9 @@ pre {
 
 <div class="platform">
 <h4>
-    1. browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.12 Safari/537.36 - 2018-02-19T09:44:55.457Z<br>
+    1. browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.12 Safari/537.36 - 2018-03-26T13:48:27.385Z<br>
     
-    <span>time-elapsed</span>- 1007 ms<br>
+    <span>time-elapsed</span>- 1005 ms<br>
     <span>tests failed</span>- 0<br>
     <span>tests passed</span>- 8<br>
     <span>tests pending</span>- 0<br>
@@ -315,14 +365,14 @@ pre {
 
 <tr>
     <td>4</td>
-    <td>0 ms</td>
+    <td>1 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildLib_default</td>
 </tr>
 
 <tr>
     <td>5</td>
-    <td>1 ms</td>
+    <td>0 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_buildReadme_default</td>
 </tr>
@@ -343,7 +393,7 @@ pre {
 
 <tr>
     <td>8</td>
-    <td>11 ms</td>
+    <td>2 ms</td>
     <td class="testPassed">passed</td>
     <td>testCase_webpage_default</td>
 </tr>

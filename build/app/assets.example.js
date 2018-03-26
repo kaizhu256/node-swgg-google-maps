@@ -113,6 +113,7 @@ instruction
 
 
 /* istanbul instrument in package swgg_google_maps */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
@@ -178,7 +179,7 @@ instruction
         module.exports = local;
         // require builtins
         Object.keys(process.binding('natives')).forEach(function (key) {
-            if (!local[key] && !(/\/|^_|^sys$/).test(key)) {
+            if (!local[key] && !(/\/|^_|^assert|^sys$/).test(key)) {
                 local[key] = require(key);
             }
         });
@@ -199,6 +200,7 @@ instruction
                 );
             }
         });
+/* validateLineSortedReset */
         local.assetsDict['/'] =
             local.assetsDict['/assets.example.html'] =
             local.assetsDict['/assets.index.template.html']

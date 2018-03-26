@@ -1,4 +1,5 @@
 /* istanbul instrument in package swgg_google_maps */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
