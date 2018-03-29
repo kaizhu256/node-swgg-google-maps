@@ -1,16 +1,16 @@
-<svg height="2830" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2830" fill="#555" width="720"></rect>
+<svg height="3214" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="3214" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-03-26T13:48:25.210Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-03-29T07:51:40.280Z - npm-testing /home/travis/build/kaizhu256/node-\</tspan>
 <tspan x="10" y="58">swgg-google-maps</tspan>
 
 <tspan x="10" y="74"></tspan>
 
 <tspan x="10" y="90"></tspan>
 
-<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v6.13.1/bin/node /home/travis/build/kaizhu256/node-sw\</tspan>
+<tspan x="10" y="106">covering $ /home/travis/.nvm/versions/node/v6.14.0/bin/node /home/travis/build/kaizhu256/node-sw\</tspan>
 <tspan x="10" y="122">gg-google-maps/test.js</tspan>
 
 <tspan x="10" y="138"></tspan>
@@ -20,7 +20,7 @@
 
 <tspan x="10" y="186">override assets assets.swgg.swagger.json</tspan>
 
-<tspan x="10" y="202">&gt; server listening on http-port 47024</tspan>
+<tspan x="10" y="202">&gt; server listening on http-port 56998</tspan>
 
 <tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/package.json</tspan>
 
@@ -67,230 +67,262 @@
 <tspan x="10" y="570"></tspan>
 
 <tspan x="10" y="586">browserTest - created electron entry-page /home/travis/build/kaizhu256/node-swgg-google-maps/tmp\</tspan>
-<tspan x="10" y="602">/electron.162629135e30.64415c437df6b.html</tspan>
+<tspan x="10" y="602">/electron.16270bdad030.5e4610171ff2c.html</tspan>
 
 <tspan x="10" y="618"></tspan>
 
 <tspan x="10" y="634">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 
-<tspan x="10" y="650">[5824:0326/134826.655347:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="650">[5927:0329/075141.799825:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="666">ted</tspan>
 
-<tspan x="10" y="682">[5824:0326/134826.655391:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="682">[5927:0329/075141.805851:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
 <tspan x="10" y="698">ted</tspan>
 
-<tspan x="10" y="714">[5853:0326/134826.688733:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="714">[5960:0329/075141.971075:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
 <tspan x="10" y="730">hreads in process gpu-process. </tspan>
 
-<tspan x="10" y="746">[5824:0326/134826.740411:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="746">[5927:0329/075141.995429:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="762">l.</tspan>
 
-<tspan x="10" y="778">[5824:0326/134826.741422:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="778">[5927:0329/075142.013096:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="794">l.</tspan>
 
-<tspan x="10" y="810">[5824:0326/134826.743946:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="810">[5927:0329/075142.022674:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="826">l.</tspan>
 
-<tspan x="10" y="842">[5824:0326/134826.744798:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="842">[5927:0329/075142.042690:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="858">l.</tspan>
 
-<tspan x="10" y="874">[5824:0326/134826.746327:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="874">[5927:0329/075142.048124:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
 <tspan x="10" y="890">l.</tspan>
 
-<tspan x="10" y="906"></tspan>
+<tspan x="10" y="906">&gt; server listening on http-port 54209</tspan>
 
-<tspan x="10" y="922">browserTest - opened http://127.0.0.1:47024/index.default.html?modeTest=1</tspan>
+<tspan x="10" y="922"></tspan>
 
-<tspan x="10" y="938"></tspan>
+<tspan x="10" y="938">browserTest - opened http://127.0.0.1:56998/index.default.html?modeTest=1</tspan>
 
-<tspan x="10" y="954">&gt; server listening on http-port 57276</tspan>
+<tspan x="10" y="954"></tspan>
 
-<tspan x="10" y="970">[5824:0326/134827.445265:INFO:CONSOLE(71)] "[browser test-case 1 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="970">[5927:0329/075142.734387:INFO:CONSOLE(71)] "[browser test-case 1 of 8 passed] - testCase_buildAp\</tspan>
 <tspan x="10" y="986">idoc_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16\</tspan>
-<tspan x="10" y="1002">2629135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1002">270bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1018">[5824:0326/134827.452867:INFO:CONSOLE(71)] "[browser test-case 2 of 8 passed] - testCase_buildAp\</tspan>
-<tspan x="10" y="1034">p_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16262\</tspan>
-<tspan x="10" y="1050">9135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1018">[5927:0329/075142.736342:INFO:CONSOLE(71)] "[browser test-case 2 of 8 passed] - testCase_buildAp\</tspan>
+<tspan x="10" y="1034">p_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270\</tspan>
+<tspan x="10" y="1050">bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1066">[5824:0326/134827.452925:INFO:CONSOLE(71)] "[browser test-case 3 of 8 passed] - testCase_buildCu\</tspan>
+<tspan x="10" y="1066">[5927:0329/075142.736386:INFO:CONSOLE(71)] "[browser test-case 3 of 8 passed] - testCase_buildCu\</tspan>
 <tspan x="10" y="1082">stomOrg_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron\</tspan>
-<tspan x="10" y="1098">.162629135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1098">.16270bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1114">[5824:0326/134827.452958:INFO:CONSOLE(71)] "[browser test-case 4 of 8 passed] - testCase_buildLi\</tspan>
-<tspan x="10" y="1130">b_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16262\</tspan>
-<tspan x="10" y="1146">9135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1114">[5927:0329/075142.738971:INFO:CONSOLE(71)] "[browser test-case 4 of 8 passed] - testCase_buildLi\</tspan>
+<tspan x="10" y="1130">b_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270\</tspan>
+<tspan x="10" y="1146">bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1162">[5824:0326/134827.458977:INFO:CONSOLE(71)] "[browser test-case 5 of 8 passed] - testCase_buildRe\</tspan>
+<tspan x="10" y="1162">[5927:0329/075142.740832:INFO:CONSOLE(71)] "[browser test-case 5 of 8 passed] - testCase_buildRe\</tspan>
 <tspan x="10" y="1178">adme_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16\</tspan>
-<tspan x="10" y="1194">2629135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1194">270bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1210">[5824:0326/134827.459008:INFO:CONSOLE(71)] "[browser test-case 6 of 8 passed] - testCase_buildTe\</tspan>
-<tspan x="10" y="1226">st_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.1626\</tspan>
-<tspan x="10" y="1242">29135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1210">[5927:0329/075142.740876:INFO:CONSOLE(71)] "[browser test-case 6 of 8 passed] - testCase_buildTe\</tspan>
+<tspan x="10" y="1226">st_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.1627\</tspan>
+<tspan x="10" y="1242">0bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1258">[5824:0326/134827.459029:INFO:CONSOLE(71)] "[browser test-case 7 of 8 passed] - testCase_nop_def\</tspan>
-<tspan x="10" y="1274">ault", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135e\</tspan>
-<tspan x="10" y="1290">30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1258">[5927:0329/075142.743199:INFO:CONSOLE(71)] "[browser test-case 7 of 8 passed] - testCase_nop_def\</tspan>
+<tspan x="10" y="1274">ault", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad0\</tspan>
+<tspan x="10" y="1290">30.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1306">[5824:0326/134827.459040:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 0. 0 .testReportDiv .\</tspan>
+<tspan x="10" y="1306">[5927:0329/075142.749252:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 0. 0 .testReportDiv .\</tspan>
 <tspan x="10" y="1322">testFailed {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16\</tspan>
-<tspan x="10" y="1338">2629135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1338">270bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1354">[5824:0326/134827.459056:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 1. 0 .testReportDiv i\</tspan>
-<tspan x="10" y="1370">mg {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135e\</tspan>
-<tspan x="10" y="1386">30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1354">[5927:0329/075142.749294:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 1. 0 .testReportDiv i\</tspan>
+<tspan x="10" y="1370">mg {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad0\</tspan>
+<tspan x="10" y="1386">30.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1402">[5824:0326/134827.459067:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 2. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1402">[5927:0329/075142.749320:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 2. 1 .testReportDiv .\</tspan>
 <tspan x="10" y="1418">displayNone {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.1\</tspan>
-<tspan x="10" y="1434">62629135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1434">6270bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1450">[5824:0326/134827.459083:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 3. 1 .testReportDiv .\</tspan>
-<tspan x="10" y="1466">footer {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629\</tspan>
-<tspan x="10" y="1482">135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1450">[5927:0329/075142.749429:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 3. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1466">footer {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270b\</tspan>
+<tspan x="10" y="1482">dad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1498">[5824:0326/134827.459095:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 4. 1 .testReportDiv .\</tspan>
-<tspan x="10" y="1514">summary {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16262\</tspan>
-<tspan x="10" y="1530">9135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1498">[5927:0329/075142.751596:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 4. 1 .testReportDiv .\</tspan>
+<tspan x="10" y="1514">summary {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270\</tspan>
+<tspan x="10" y="1530">bdad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1546">[5824:0326/134827.459110:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 5. 1 .testReportDiv p\</tspan>
-<tspan x="10" y="1562">re {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135e\</tspan>
-<tspan x="10" y="1578">30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1546">[5927:0329/075142.751630:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 5. 1 .testReportDiv p\</tspan>
+<tspan x="10" y="1562">re {", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad0\</tspan>
+<tspan x="10" y="1578">30.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1594">[5824:0326/134827.459123:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 6. 1 .testReportDiv {\</tspan>
-<tspan x="10" y="1610">", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135e30.6\</tspan>
-<tspan x="10" y="1626">4415c437df6b.html (71)</tspan>
+<tspan x="10" y="1594">[5927:0329/075142.751661:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 6. 1 .testReportDiv {\</tspan>
+<tspan x="10" y="1610">", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5\</tspan>
+<tspan x="10" y="1626">e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1642">[5824:0326/134827.459139:INFO:CONSOLE(71)] "[browser test-case 8 of 8 passed] - testCase_webpage\</tspan>
-<tspan x="10" y="1658">_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629\</tspan>
-<tspan x="10" y="1674">135e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="1642">[5927:0329/075142.751684:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 7. 1 .uiAnimateShake \</tspan>
+<tspan x="10" y="1658">{", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.\</tspan>
+<tspan x="10" y="1674">5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1690">[5824:0326/134828.454894:INFO:CONSOLE(71)] "----------|-----------|-----------|-----------|-----\</tspan>
-<tspan x="10" y="1706">------|</tspan>
+<tspan x="10" y="1690">[5927:0329/075142.751714:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 8. 1 .uiAnimateShake \</tspan>
+<tspan x="10" y="1706">{", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.\</tspan>
+<tspan x="10" y="1722">5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1722">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="1738">[5927:0329/075142.751737:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 9. 1 .zeroPixel {", s\</tspan>
+<tspan x="10" y="1754">ource: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e461\</tspan>
+<tspan x="10" y="1770">0171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1738">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1786">[5927:0329/075142.751757:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 10. 1 .zeroPixel {", \</tspan>
+<tspan x="10" y="1802">source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e46\</tspan>
+<tspan x="10" y="1818">10171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1754">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1834">[5927:0329/075142.751768:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 11. 1 body &gt; pre,", s\</tspan>
+<tspan x="10" y="1850">ource: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e461\</tspan>
+<tspan x="10" y="1866">0171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1770">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1882">[5927:0329/075142.752141:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 12. 1 body &gt; pre,", s\</tspan>
+<tspan x="10" y="1898">ource: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e461\</tspan>
+<tspan x="10" y="1914">0171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1786">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1930">[5927:0329/075142.752518:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 13. 1 code,", source:\</tspan>
+<tspan x="10" y="1946"> file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e4610171ff\</tspan>
+<tspan x="10" y="1962">2c.html (71)</tspan>
 
-<tspan x="10" y="1802">", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135e30.6\</tspan>
-<tspan x="10" y="1818">4415c437df6b.html (71)</tspan>
+<tspan x="10" y="1978">[5927:0329/075142.753008:INFO:CONSOLE(71)] "validateDocumentStyleUnmatched 14. 1 code,", source:\</tspan>
+<tspan x="10" y="1994"> file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5e4610171ff\</tspan>
+<tspan x="10" y="2010">2c.html (71)</tspan>
 
-<tspan x="10" y="1834">[5824:0326/134828.462402:INFO:CONSOLE(71)] "created coverage file /tmp/build/coverage.html/index\</tspan>
-<tspan x="10" y="1850">.html", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.162629135\</tspan>
-<tspan x="10" y="1866">e30.64415c437df6b.html (71)</tspan>
+<tspan x="10" y="2026">[5927:0329/075142.753490:INFO:CONSOLE(71)] "[browser test-case 8 of 8 passed] - testCase_webpage\</tspan>
+<tspan x="10" y="2042">_default", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270b\</tspan>
+<tspan x="10" y="2058">dad030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="1882">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="2074">[5927:0329/075143.751016:INFO:CONSOLE(71)] "----------|-----------|-----------|-----------|-----\</tspan>
+<tspan x="10" y="2090">------|</tspan>
 
-<tspan x="10" y="1898"></tspan>
+<tspan x="10" y="2106">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="1914">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
-<tspan x="10" y="1930">ld/screenshot.npmTest.browser.%2F.png</tspan>
+<tspan x="10" y="2122">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1946"></tspan>
+<tspan x="10" y="2138">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="1962">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
-<tspan x="10" y="1978">ld/screenshot.npmTest.browser.%2F.html</tspan>
+<tspan x="10" y="2154">All files |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="1994"></tspan>
+<tspan x="10" y="2170">----------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2010">browserTest - merged coverage from file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/c\</tspan>
-<tspan x="10" y="2026">overage.npmTest.browser.%2Findex.default.html.json</tspan>
+<tspan x="10" y="2186">", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad030.5\</tspan>
+<tspan x="10" y="2202">e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="2042"></tspan>
+<tspan x="10" y="2218">[5927:0329/075143.756185:INFO:CONSOLE(71)] "created coverage file /tmp/build/coverage.html/index\</tspan>
+<tspan x="10" y="2234">.html", source: file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/electron.16270bdad\</tspan>
+<tspan x="10" y="2250">030.5e4610171ff2c.html (71)</tspan>
 
-<tspan x="10" y="2058"></tspan>
+<tspan x="10" y="2266">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
 
-<tspan x="10" y="2074">browserTest - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tm\</tspan>
-<tspan x="10" y="2090">p/test-report.npmTest.browser.%2Findex.default.html.json</tspan>
+<tspan x="10" y="2282"></tspan>
 
-<tspan x="10" y="2106"></tspan>
+<tspan x="10" y="2298">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
+<tspan x="10" y="2314">ld/screenshot.npmTest.browser.%2F.png</tspan>
 
-<tspan x="10" y="2122">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="2330"></tspan>
 
-<tspan x="10" y="2138">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2346">browserTest - created screenshot file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bui\</tspan>
+<tspan x="10" y="2362">ld/screenshot.npmTest.browser.%2F.html</tspan>
 
-<tspan x="10" y="2154">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="2378"></tspan>
 
-<tspan x="10" y="2170">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2394">browserTest - merged coverage from file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/c\</tspan>
+<tspan x="10" y="2410">overage.npmTest.browser.%2Findex.default.html.json</tspan>
 
-<tspan x="10" y="2186">   node-swgg-google-maps/     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2426"></tspan>
 
-<tspan x="10" y="2202">      example.js              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2442"></tspan>
 
-<tspan x="10" y="2218">      lib.swgg_google_maps.js |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2458">browserTest - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tm\</tspan>
+<tspan x="10" y="2474">p/test-report.npmTest.browser.%2Findex.default.html.json</tspan>
 
-<tspan x="10" y="2234">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2490"></tspan>
 
-<tspan x="10" y="2250">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2506">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
 
-<tspan x="10" y="2266">All files                     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2522">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2282">------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2538">File                          |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 
-<tspan x="10" y="2298"></tspan>
+<tspan x="10" y="2554">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2314">created coverage file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/coverage.html\</tspan>
-<tspan x="10" y="2330">/index.html</tspan>
+<tspan x="10" y="2570">   node-swgg-google-maps/     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2346"></tspan>
+<tspan x="10" y="2586">      example.js              |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2362">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bu\</tspan>
-<tspan x="10" y="2378">ild/test-report.json</tspan>
+<tspan x="10" y="2602">      lib.swgg_google_maps.js |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2394"></tspan>
+<tspan x="10" y="2618">      test.js                 |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2410">-------------------------------------------------------</tspan>
+<tspan x="10" y="2634">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
-<tspan x="10" y="2426">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
-<tspan x="10" y="2442">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.12 Safari/537.36 - 2018-03-26\</tspan>
-<tspan x="10" y="2458">T13:48:27.385Z</tspan>
+<tspan x="10" y="2650">All files                     |       100 |       100 |       100 |       100 |</tspan>
 
-<tspan x="10" y="2474">|      12 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="2490">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="2506">| test-report - npmTest - node - linux v6.13.1 - 2018-03-26T13:48:25.505Z</tspan>
-
-<tspan x="10" y="2522">|   16461 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="2538">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="2554">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
-<tspan x="10" y="2570">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.12 Safari/537.36 - 2\</tspan>
-<tspan x="10" y="2586">018-03-26T13:47:18.996Z</tspan>
-
-<tspan x="10" y="2602">|      15 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="2618">-------------------------------------------------------</tspan>
-
-<tspan x="10" y="2634">| test-report - npmTestPublished - node - linux v6.13.1 - 2018-03-26T13:47:16.216Z</tspan>
-
-<tspan x="10" y="2650">|   17072 ms            0 failed        8 passed      |</tspan>
-
-<tspan x="10" y="2666">-------------------------------------------------------</tspan>
+<tspan x="10" y="2666">------------------------------|-----------|-----------|-----------|-----------|</tspan>
 
 <tspan x="10" y="2682"></tspan>
 
-<tspan x="10" y="2698">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
-<tspan x="10" y="2714">t.html</tspan>
+<tspan x="10" y="2698">created coverage file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/coverage.html\</tspan>
+<tspan x="10" y="2714">/index.html</tspan>
 
 <tspan x="10" y="2730"></tspan>
 
-<tspan x="10" y="2746"></tspan>
-
-<tspan x="10" y="2762">npmTest - 0 failed tests</tspan>
+<tspan x="10" y="2746">npmTest - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/bu\</tspan>
+<tspan x="10" y="2762">ild/test-report.json</tspan>
 
 <tspan x="10" y="2778"></tspan>
 
-<tspan x="10" y="2794"></tspan>
+<tspan x="10" y="2794">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2810">[MODE_BUILD=npmTest] - 2018-03-26T13:48:43.582Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2810">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
+<tspan x="10" y="2826">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-03-29\</tspan>
+<tspan x="10" y="2842">T07:51:42.678Z</tspan>
+
+<tspan x="10" y="2858">|      19 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="2874">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="2890">| test-report - npmTest - node - linux v6.14.0 - 2018-03-29T07:51:40.572Z</tspan>
+
+<tspan x="10" y="2906">|   16682 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="2922">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="2938">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="2954">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2\</tspan>
+<tspan x="10" y="2970">018-03-29T07:50:32.546Z</tspan>
+
+<tspan x="10" y="2986">|      16 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3002">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3018">| test-report - npmTestPublished - node - linux v6.14.0 - 2018-03-29T07:50:29.701Z</tspan>
+
+<tspan x="10" y="3034">|   17124 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="3050">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="3066"></tspan>
+
+<tspan x="10" y="3082">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
+<tspan x="10" y="3098">t.html</tspan>
+
+<tspan x="10" y="3114"></tspan>
+
+<tspan x="10" y="3130"></tspan>
+
+<tspan x="10" y="3146">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="3162"></tspan>
+
+<tspan x="10" y="3178"></tspan>
+
+<tspan x="10" y="3194">[MODE_BUILD=npmTest] - 2018-03-29T07:51:58.861Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
