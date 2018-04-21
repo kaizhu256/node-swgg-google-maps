@@ -114,10 +114,11 @@ instruction
 
 
 /* istanbul instrument in package swgg_google_maps */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
-    maxerr: 8,
+    maxerr: 4,
     maxlen: 100,
     node: true,
     nomen: true,
@@ -178,11 +179,40 @@ instruction
         // init exports
         module.exports = local;
         // require builtins
-        Object.keys(process.binding('natives')).forEach(function (key) {
-            if (!local[key] && !(/\/|^_|^sys$/).test(key)) {
-                local[key] = require(key);
-            }
-        });
+        // local.assert = require('assert');
+        local.buffer = require('buffer');
+        local.child_process = require('child_process');
+        local.cluster = require('cluster');
+        local.console = require('console');
+        local.constants = require('constants');
+        local.crypto = require('crypto');
+        local.dgram = require('dgram');
+        local.dns = require('dns');
+        local.domain = require('domain');
+        local.events = require('events');
+        local.fs = require('fs');
+        local.http = require('http');
+        local.https = require('https');
+        local.module = require('module');
+        local.net = require('net');
+        local.os = require('os');
+        local.path = require('path');
+        local.process = require('process');
+        local.punycode = require('punycode');
+        local.querystring = require('querystring');
+        local.readline = require('readline');
+        local.repl = require('repl');
+        local.stream = require('stream');
+        local.string_decoder = require('string_decoder');
+        local.timers = require('timers');
+        local.tls = require('tls');
+        local.tty = require('tty');
+        local.url = require('url');
+        local.util = require('util');
+        local.v8 = require('v8');
+        local.vm = require('vm');
+        local.zlib = require('zlib');
+/* validateLineSortedReset */
         // init assets
         local.assetsDict = local.assetsDict || {};
         [
@@ -200,12 +230,17 @@ instruction
                 );
             }
         });
+/* validateLineSortedReset */
+        // bug-workaround - long $npm_package_buildCustomOrg
+        /* jslint-ignore-begin */
+        local.assetsDict['/assets.swgg_google_maps.js'] = local.assetsDict['/assets.swgg_google_maps.js'] ||
+            local.fs.readFileSync(local.__dirname + '/lib.swgg_google_maps.js', 'utf8'
+        ).replace((/^#!/), '//');
+/* validateLineSortedReset */
         local.assetsDict['/'] =
             local.assetsDict['/assets.example.html'] =
             local.assetsDict['/assets.index.template.html']
             .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
-                // jslint-hack
-                String(match0);
                 switch (match1) {
                 case 'npm_package_description':
                     return 'the greatest app in the world!';
@@ -226,14 +261,6 @@ instruction
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
-        // bug-workaround - long $npm_package_buildCustomOrg
-        /* jslint-ignore-begin */
-        local.assetsDict['/assets.swgg_google_maps.js'] =
-            local.assetsDict['/assets.swgg_google_maps.js'] ||
-            local.fs.readFileSync(
-                local.__dirname + '/lib.swgg_google_maps.js',
-                'utf8'
-            ).replace((/^#!/), '//');
         /* jslint-ignore-end */
         local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
         // if $npm_config_timeout_exit exists,
