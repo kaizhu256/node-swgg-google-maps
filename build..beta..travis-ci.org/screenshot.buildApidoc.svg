@@ -1,63 +1,117 @@
-<svg height="958" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="958" fill="#555" width="720"></rect>
+<svg height="1006" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1006" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-01-16T01:50:23.345Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-04-21T13:04:19.699Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-swgg-google-maps</tspan>
+
 <tspan x="10" y="74"></tspan>
+
 <tspan x="10" y="90"></tspan>
+
 <tspan x="10" y="106">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tm\</tspan>
 <tspan x="10" y="122">p/build/test-report.json</tspan>
+
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
-<tspan x="10" y="154">&gt; server listening on http-port 51184</tspan>
+
+<tspan x="10" y="154">&gt; server listening on http-port 65212</tspan>
+
 <tspan x="10" y="170">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/package.json</tspan>
+
 <tspan x="10" y="186">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/assets.swgg.swagge\</tspan>
 <tspan x="10" y="202">r.json</tspan>
+
 <tspan x="10" y="218">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/.gitignore</tspan>
+
 <tspan x="10" y="234">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/lib.swgg_google_ma\</tspan>
 <tspan x="10" y="250">ps.js</tspan>
+
 <tspan x="10" y="266">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/LICENSE</tspan>
+
 <tspan x="10" y="282">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/package.json</tspan>
-<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/README.md</tspan>
-<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/test.js</tspan>
-<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/.travis.yml</tspan>
-<tspan x="10" y="346">apidocCreate - requiring /home/travis/build/kaizhu256/node-swgg-google-maps ...</tspan>
-<tspan x="10" y="362">apidocCreate - ... required /home/travis/build/kaizhu256/node-swgg-google-maps</tspan>
-<tspan x="10" y="378">created apidoc file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/apidoc.html</tspan>
-<tspan x="10" y="394"></tspan>
-<tspan x="10" y="410">[node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
-<tspan x="10" y="426"></tspan>
-<tspan x="10" y="442">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tm\</tspan>
-<tspan x="10" y="458">p/build/test-report.json</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/package-lock.json</tspan>
+
+<tspan x="10" y="314">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/README.md</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/test.js</tspan>
+
+<tspan x="10" y="346">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-google-maps/.travis.yml</tspan>
+
+<tspan x="10" y="362">apidocCreate - requiring /home/travis/build/kaizhu256/node-swgg-google-maps ...</tspan>
+
+<tspan x="10" y="378">apidocCreate - ... required /home/travis/build/kaizhu256/node-swgg-google-maps</tspan>
+
+<tspan x="10" y="394">created apidoc file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="410"></tspan>
+
+<tspan x="10" y="426">[node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="442">(node:6313) ExperimentalWarning: The http2 module is an experimental API.</tspan>
+
+<tspan x="10" y="458">(node:6313) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+
 <tspan x="10" y="474"></tspan>
-<tspan x="10" y="490">-------------------------------------------------------</tspan>
-<tspan x="10" y="506">| test-report - buildApidoc - node - linux v6.12.3 - 2018-01-16T01:50:23.563Z</tspan>
-<tspan x="10" y="522">|     163 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="490">buildApidoc - merged test-report from file /home/travis/build/kaizhu256/node-swgg-google-maps/tm\</tspan>
+<tspan x="10" y="506">p/build/test-report.json</tspan>
+
+<tspan x="10" y="522"></tspan>
+
 <tspan x="10" y="538">-------------------------------------------------------</tspan>
-<tspan x="10" y="554">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
-<tspan x="10" y="570">ebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.15 Safari/537.36 - 2018-01-16T\</tspan>
-<tspan x="10" y="586">01:50:05.945Z</tspan>
-<tspan x="10" y="602">|      11 ms            0 failed        8 passed      |</tspan>
-<tspan x="10" y="618">-------------------------------------------------------</tspan>
-<tspan x="10" y="634">| test-report - npmTest - node - linux v6.12.3 - 2018-01-16T01:50:04.012Z</tspan>
-<tspan x="10" y="650">|   16361 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="554">| test-report - buildApidoc - node - linux v9.11.1 - 2018-04-21T13:04:19.946Z</tspan>
+
+<tspan x="10" y="570">|     204 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="586">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="602">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
+<tspan x="10" y="618">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-04-21\</tspan>
+<tspan x="10" y="634">T13:04:02.333Z</tspan>
+
+<tspan x="10" y="650">|      55 ms            0 failed        8 passed      |</tspan>
+
 <tspan x="10" y="666">-------------------------------------------------------</tspan>
-<tspan x="10" y="682">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
-<tspan x="10" y="698">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.15 Safari/537.36 - 20\</tspan>
-<tspan x="10" y="714">18-01-16T01:48:59.807Z</tspan>
-<tspan x="10" y="730">|      13 ms            0 failed        8 passed      |</tspan>
-<tspan x="10" y="746">-------------------------------------------------------</tspan>
-<tspan x="10" y="762">| test-report - npmTestPublished - node - linux v6.12.3 - 2018-01-16T01:48:57.146Z</tspan>
-<tspan x="10" y="778">|   17000 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="682">| test-report - npmTest - node - linux v9.11.1 - 2018-04-21T13:04:00.462Z</tspan>
+
+<tspan x="10" y="698">|   16507 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="714">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="730">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="746">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2\</tspan>
+<tspan x="10" y="762">018-04-21T13:02:56.154Z</tspan>
+
+<tspan x="10" y="778">|      16 ms            0 failed        8 passed      |</tspan>
+
 <tspan x="10" y="794">-------------------------------------------------------</tspan>
-<tspan x="10" y="810"></tspan>
-<tspan x="10" y="826">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
-<tspan x="10" y="842">t.html</tspan>
+
+<tspan x="10" y="810">| test-report - npmTestPublished - node - linux v9.11.1 - 2018-04-21T13:02:53.458Z</tspan>
+
+<tspan x="10" y="826">|   17315 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="842">-------------------------------------------------------</tspan>
+
 <tspan x="10" y="858"></tspan>
-<tspan x="10" y="874"></tspan>
-<tspan x="10" y="890">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="874">created test-report file /home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/test-repor\</tspan>
+<tspan x="10" y="890">t.html</tspan>
+
 <tspan x="10" y="906"></tspan>
+
 <tspan x="10" y="922"></tspan>
-<tspan x="10" y="938">[MODE_BUILD=buildApidoc] - 2018-01-16T01:50:25.474Z - EXIT_CODE - 0</tspan>
+
+<tspan x="10" y="938">buildApidoc - 0 failed tests</tspan>
+
+<tspan x="10" y="954"></tspan>
+
+<tspan x="10" y="970"></tspan>
+
+<tspan x="10" y="986">[MODE_BUILD=buildApidoc] - 2018-04-21T13:04:21.659Z - EXIT_CODE - 0</tspan>
+
 </text>
 </svg>
