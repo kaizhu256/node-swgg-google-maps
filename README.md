@@ -1,5 +1,5 @@
 # swgg-google-maps
-this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo
+this zero-dependency package will provide a (nodejs-compatible) swagger-client for google-maps's web-apis, with a working web-demo
 
 # live web demo
 - [https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app)
@@ -8,7 +8,7 @@ this zero-dependency package will provide a swagger-client for google-maps's web
 
 
 
-[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-swgg-google-maps.svg)](https://travis-ci.org/kaizhu256/node-swgg-google-maps) [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build/coverage.html/index.html) [![snyk.io vulnerabilities](https://snyk.io/test/github/kaizhu256/node-swgg-google-maps/badge.svg)](https://snyk.io/test/github/kaizhu256/node-swgg-google-maps)
+[![travis-ci.org build-status](https://api.travis-ci.org/kaizhu256/node-swgg-google-maps.svg)](https://travis-ci.org/kaizhu256/node-swgg-google-maps) [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build/coverage.html/index.html)
 
 [![NPM](https://nodei.co/npm/swgg-google-maps.png?downloads=true)](https://www.npmjs.com/package/swgg-google-maps)
 
@@ -17,6 +17,7 @@ this zero-dependency package will provide a swagger-client for google-maps's web
 | git-branch : | [master](https://github.com/kaizhu256/node-swgg-google-maps/tree/master) | [beta](https://github.com/kaizhu256/node-swgg-google-maps/tree/beta) | [alpha](https://github.com/kaizhu256/node-swgg-google-maps/tree/alpha)|
 |--:|:--|:--|:--|
 | test-server-github : | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/app) | [![github.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/GitHub-Mark-32px.png)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/app)|
+| test-server-heroku : | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-master.herokuapp.com) | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-beta.herokuapp.com) | [![heroku.com test-server](https://kaizhu256.github.io/node-swgg-google-maps/heroku-logo.75x25.png)](https://h1-swgg-google-maps-alpha.herokuapp.com)|
 | test-report : | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/test-report.html) | [![test-report](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/test-report.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/test-report.html)|
 | coverage : | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..master..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..beta..travis-ci.org/coverage.html/index.html) | [![coverage](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/coverage.badge.svg)](https://kaizhu256.github.io/node-swgg-google-maps/build..alpha..travis-ci.org/coverage.html/index.html)|
 | build-artifacts : | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..master..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..beta..travis-ci.org) | [![build-artifacts](https://kaizhu256.github.io/node-swgg-google-maps/glyphicons_144_folder_open.png)](https://github.com/kaizhu256/node-swgg-google-maps/tree/gh-pages/build..alpha..travis-ci.org)|
@@ -57,10 +58,9 @@ this zero-dependency package will provide a swagger-client for google-maps's web
 #### todo
 - none
 
-#### changelog for v2018.1.15
-- npm publish 2018.1.15
-- auto-sync master swagger.json from ../swgg-\$npm_package_swggAll/assets.swgg.swagger.json
-- disable heroku test-server
+#### changelog for v2018.4.21
+- npm publish v2018.4.21
+- update build
 - none
 
 #### this package requires
@@ -114,10 +114,11 @@ instruction
 
 
 /* istanbul instrument in package swgg_google_maps */
+/* jslint-utility2 */
 /*jslint
     bitwise: true,
     browser: true,
-    maxerr: 8,
+    maxerr: 4,
     maxlen: 100,
     node: true,
     nomen: true,
@@ -178,11 +179,40 @@ instruction
         // init exports
         module.exports = local;
         // require builtins
-        Object.keys(process.binding('natives')).forEach(function (key) {
-            if (!local[key] && !(/\/|^_|^sys$/).test(key)) {
-                local[key] = require(key);
-            }
-        });
+        // local.assert = require('assert');
+        local.buffer = require('buffer');
+        local.child_process = require('child_process');
+        local.cluster = require('cluster');
+        local.console = require('console');
+        local.constants = require('constants');
+        local.crypto = require('crypto');
+        local.dgram = require('dgram');
+        local.dns = require('dns');
+        local.domain = require('domain');
+        local.events = require('events');
+        local.fs = require('fs');
+        local.http = require('http');
+        local.https = require('https');
+        local.module = require('module');
+        local.net = require('net');
+        local.os = require('os');
+        local.path = require('path');
+        local.process = require('process');
+        local.punycode = require('punycode');
+        local.querystring = require('querystring');
+        local.readline = require('readline');
+        local.repl = require('repl');
+        local.stream = require('stream');
+        local.string_decoder = require('string_decoder');
+        local.timers = require('timers');
+        local.tls = require('tls');
+        local.tty = require('tty');
+        local.url = require('url');
+        local.util = require('util');
+        local.v8 = require('v8');
+        local.vm = require('vm');
+        local.zlib = require('zlib');
+/* validateLineSortedReset */
         // init assets
         local.assetsDict = local.assetsDict || {};
         [
@@ -200,12 +230,17 @@ instruction
                 );
             }
         });
+/* validateLineSortedReset */
+        // bug-workaround - long $npm_package_buildCustomOrg
+        /* jslint-ignore-begin */
+        local.assetsDict['/assets.swgg_google_maps.js'] = local.assetsDict['/assets.swgg_google_maps.js'] ||
+            local.fs.readFileSync(local.__dirname + '/lib.swgg_google_maps.js', 'utf8'
+        ).replace((/^#!/), '//');
+/* validateLineSortedReset */
         local.assetsDict['/'] =
             local.assetsDict['/assets.example.html'] =
             local.assetsDict['/assets.index.template.html']
             .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
-                // jslint-hack
-                String(match0);
                 switch (match1) {
                 case 'npm_package_description':
                     return 'the greatest app in the world!';
@@ -226,14 +261,6 @@ instruction
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
-        // bug-workaround - long $npm_package_buildCustomOrg
-        /* jslint-ignore-begin */
-        local.assetsDict['/assets.swgg_google_maps.js'] =
-            local.assetsDict['/assets.swgg_google_maps.js'] ||
-            local.fs.readFileSync(
-                local.__dirname + '/lib.swgg_google_maps.js',
-                'utf8'
-            ).replace((/^#!/), '//');
         /* jslint-ignore-end */
         local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
         // if $npm_config_timeout_exit exists,
@@ -288,6 +315,15 @@ instruction
 1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployGithubTest.browser.%252Fnode-swgg-google-maps%252Fbuild%252Fapp.png)
 
+1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
+[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252Fassets.swgg.html.png)
+
+1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHeroku.browser.%252F.png)
+
+1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)
+[![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.deployHerokuTest.browser.%252F.png)
+
 1. [https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)
 [![screenshot](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)](https://kaizhu256.github.io/node-swgg-google-maps/build/screenshot.npmTest.browser.%252F.png)
 
@@ -303,7 +339,7 @@ instruction
 ```json
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "this zero-dependency package will provide a swagger-client for google-maps's web-apis, with a working web-demo",
+    "description": "this zero-dependency package will provide a (nodejs-compatible) swagger-client for google-maps's web-apis, with a working web-demo",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
@@ -332,16 +368,18 @@ instruction
         "url": "https://github.com/kaizhu256/node-swgg-google-maps.git"
     },
     "scripts": {
+        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawCreate",
+        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawFetch",
         "build-ci": "utility2 shReadmeTest build_ci.sh",
         "env": "env",
-        "heroku-postbuild": "npm uninstall utility2 2>/dev/null; npm install kaizhu256/node-utility2#alpha && utility2 shDeployHeroku",
-        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha --prefix . && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"
     },
     "swggAll": "google-all",
     "swggTags0": "google-maps",
-    "version": "2018.1.15"
+    "version": "2018.4.21"
 }
 ```
 
@@ -359,13 +397,14 @@ instruction
 
 # this shell script will run the build for this package
 
-shBuildCiAfter() {(set -e
+shBuildCiAfter () {(set -e
+    # shDeployCustom
     shDeployGithub
-    # shDeployHeroku
+    shDeployHeroku
     shReadmeTest example.sh
 )}
 
-shBuildCiBefore() {(set -e
+shBuildCiBefore () {(set -e
     shNpmTestPublished
     shReadmeTest example.js
 )}
