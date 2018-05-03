@@ -58,8 +58,8 @@ this zero-dependency package will provide a (nodejs-compatible) swagger-client f
 #### todo
 - none
 
-#### changelog for v2018.4.21
-- npm publish v2018.4.21
+#### changelog 2018.4.21
+- npm publish 2018.4.21
 - update build
 - none
 
@@ -235,7 +235,8 @@ instruction
         /* jslint-ignore-begin */
         local.assetsDict['/assets.swgg_google_maps.js'] = local.assetsDict['/assets.swgg_google_maps.js'] ||
             local.fs.readFileSync(local.__dirname + '/lib.swgg_google_maps.js', 'utf8'
-        ).replace((/^#!/), '//');
+        ).replace((/^#!\//), '// ');
+        /* jslint-ignore-end */
 /* validateLineSortedReset */
         local.assetsDict['/'] =
             local.assetsDict['/assets.example.html'] =
@@ -261,7 +262,6 @@ instruction
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
-        /* jslint-ignore-end */
         local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
         // if $npm_config_timeout_exit exists,
         // then exit this process after $npm_config_timeout_exit ms
@@ -410,7 +410,7 @@ shBuildCiBefore () {(set -e
 )}
 
 # run shBuildCi
-eval $(utility2 source)
+eval "$(utility2 source)"
 shBuildCi
 ```
 
