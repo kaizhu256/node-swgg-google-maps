@@ -1,119 +1,131 @@
-<svg height="942" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="942" fill="#555" width="720"></rect>
+<svg height="1038" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1038" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">2018-04-21 20:48:06 +0800</tspan>
+<tspan x="10" y="26">2018-05-04 15:58:40 +0800</tspan>
 
-<tspan x="10" y="42">[npm publish] - npm publish v2018.4.21</tspan>
+<tspan x="10" y="42">ajaxCrawl</tspan>
 
-<tspan x="10" y="58">- update build</tspan>
+<tspan x="10" y="58"></tspan>
 
-<tspan x="10" y="74"></tspan>
+<tspan x="10" y="74">2018-05-04 07:37:06 +0800</tspan>
 
-<tspan x="10" y="90">2018-01-16 08:27:55 +0700</tspan>
+<tspan x="10" y="90">- revamp function buildLib</tspan>
 
-<tspan x="10" y="106">[npm publish] - npm publish 2018.1.15</tspan>
+<tspan x="10" y="106"></tspan>
 
-<tspan x="10" y="122">- auto-sync master swagger.json from ../swgg-$npm_package_swggAll/assets.swgg.swagger.json</tspan>
+<tspan x="10" y="122">2018-04-21 20:48:06 +0800</tspan>
 
-<tspan x="10" y="138">- disable heroku test-server</tspan>
+<tspan x="10" y="138">[npm publish] - npm publish v2018.4.21</tspan>
 
-<tspan x="10" y="154"></tspan>
+<tspan x="10" y="154">- update build</tspan>
 
-<tspan x="10" y="170">2017-11-21 15:34:35 +0800</tspan>
+<tspan x="10" y="170"></tspan>
 
-<tspan x="10" y="186">[npm publish] - npm publish 2017.11.21</tspan>
+<tspan x="10" y="186">2018-01-16 08:27:55 +0700</tspan>
 
-<tspan x="10" y="202">- update swgg-client</tspan>
+<tspan x="10" y="202">[npm publish] - npm publish 2018.1.15</tspan>
 
-<tspan x="10" y="218"></tspan>
+<tspan x="10" y="218">- auto-sync master swagger.json from ../swgg-$npm_package_swggAll/assets.swgg.swagger.json</tspan>
 
-<tspan x="10" y="234">2017-11-18 10:22:07 +0800</tspan>
+<tspan x="10" y="234">- disable heroku test-server</tspan>
 
-<tspan x="10" y="250">[npm publish] - npm publish 2017.11.17</tspan>
+<tspan x="10" y="250"></tspan>
 
-<tspan x="10" y="266">- add dynamic input validation</tspan>
+<tspan x="10" y="266">2017-11-21 15:34:35 +0800</tspan>
 
-<tspan x="10" y="282"></tspan>
+<tspan x="10" y="282">[npm publish] - npm publish 2017.11.21</tspan>
 
-<tspan x="10" y="298">2017-10-29 22:29:18 +0800</tspan>
+<tspan x="10" y="298">- update swgg-client</tspan>
 
-<tspan x="10" y="314">[npm publish] - npm publish 2017.10.28</tspan>
+<tspan x="10" y="314"></tspan>
 
-<tspan x="10" y="330">- remove unused browser-code when building README.md</tspan>
+<tspan x="10" y="330">2017-11-18 10:22:07 +0800</tspan>
 
-<tspan x="10" y="346">- update docs</tspan>
+<tspan x="10" y="346">[npm publish] - npm publish 2017.11.17</tspan>
 
-<tspan x="10" y="362"></tspan>
+<tspan x="10" y="362">- add dynamic input validation</tspan>
 
-<tspan x="10" y="378">2017-10-23 05:27:50 +0800</tspan>
+<tspan x="10" y="378"></tspan>
 
-<tspan x="10" y="394">[npm publish] - npm publish 2017.10.22</tspan>
+<tspan x="10" y="394">2017-10-29 22:29:18 +0800</tspan>
 
-<tspan x="10" y="410">- rename package-name google-maps-lite -&gt; swgg-google-maps</tspan>
+<tspan x="10" y="410">[npm publish] - npm publish 2017.10.28</tspan>
 
-<tspan x="10" y="426">- add api GET /maps/api/place/autocomplete/json</tspan>
+<tspan x="10" y="426">- remove unused browser-code when building README.md</tspan>
 
-<tspan x="10" y="442">- add api GET /maps/api/place/details/json</tspan>
+<tspan x="10" y="442">- update docs</tspan>
 
-<tspan x="10" y="458">- add api GET /maps/api/place/nearbysearch/json</tspan>
+<tspan x="10" y="458"></tspan>
 
-<tspan x="10" y="474">- add api GET /maps/api/place/photo</tspan>
+<tspan x="10" y="474">2017-10-23 05:27:50 +0800</tspan>
 
-<tspan x="10" y="490">- add api GET /maps/api/place/queryautocomplete/json</tspan>
+<tspan x="10" y="490">[npm publish] - npm publish 2017.10.22</tspan>
 
-<tspan x="10" y="506">- add api GET /maps/api/place/textsearch/json</tspan>
+<tspan x="10" y="506">- rename package-name google-maps-lite -&gt; swgg-google-maps</tspan>
 
-<tspan x="10" y="522">- add api GET /v1/nearestRoads</tspan>
+<tspan x="10" y="522">- add api GET /maps/api/place/autocomplete/json</tspan>
 
-<tspan x="10" y="538">- add api GET /v1/snapToRoads</tspan>
+<tspan x="10" y="538">- add api GET /maps/api/place/details/json</tspan>
 
-<tspan x="10" y="554">- add api GET /v1/speedLimits</tspan>
+<tspan x="10" y="554">- add api GET /maps/api/place/nearbysearch/json</tspan>
 
-<tspan x="10" y="570">- swgg - add feature $SWGG_TAGS0_FILTER to filter x-tags0</tspan>
+<tspan x="10" y="570">- add api GET /maps/api/place/photo</tspan>
 
-<tspan x="10" y="586"></tspan>
+<tspan x="10" y="586">- add api GET /maps/api/place/queryautocomplete/json</tspan>
 
-<tspan x="10" y="602">2017-10-12 20:08:17 +0800</tspan>
+<tspan x="10" y="602">- add api GET /maps/api/place/textsearch/json</tspan>
 
-<tspan x="10" y="618">[npm publish] - npm publish 2017.10.12</tspan>
+<tspan x="10" y="618">- add api GET /v1/nearestRoads</tspan>
 
-<tspan x="10" y="634">- add api POST /geolocation/v1/geolocate</tspan>
+<tspan x="10" y="634">- add api GET /v1/snapToRoads</tspan>
 
-<tspan x="10" y="650">- add api GET /maps/api/distancematrix/json</tspan>
+<tspan x="10" y="650">- add api GET /v1/speedLimits</tspan>
 
-<tspan x="10" y="666">- add api GET /maps/api/elevation/json</tspan>
+<tspan x="10" y="666">- swgg - add feature $SWGG_TAGS0_FILTER to filter x-tags0</tspan>
 
-<tspan x="10" y="682">- add api GET /maps/api/timezone</tspan>
+<tspan x="10" y="682"></tspan>
 
-<tspan x="10" y="698">- README.md - include assets.swgg.swagger.json in cdn-download section</tspan>
+<tspan x="10" y="698">2017-10-12 20:08:17 +0800</tspan>
 
-<tspan x="10" y="714"></tspan>
+<tspan x="10" y="714">[npm publish] - npm publish 2017.10.12</tspan>
 
-<tspan x="10" y="730">2017-10-06 00:36:24 +0800</tspan>
+<tspan x="10" y="730">- add api POST /geolocation/v1/geolocate</tspan>
 
-<tspan x="10" y="746">[npm publish] - npm publish 2017.10.2</tspan>
+<tspan x="10" y="746">- add api GET /maps/api/distancematrix/json</tspan>
 
-<tspan x="10" y="762">- add file assets.utility2.rollup.js</tspan>
+<tspan x="10" y="762">- add api GET /maps/api/elevation/json</tspan>
 
-<tspan x="10" y="778">- apidoc - document swgg.apiDict</tspan>
+<tspan x="10" y="778">- add api GET /maps/api/timezone</tspan>
 
-<tspan x="10" y="794">- flesh out working example.js demo</tspan>
+<tspan x="10" y="794">- README.md - include assets.swgg.swagger.json in cdn-download section</tspan>
 
-<tspan x="10" y="810">- persist api-key to localStorage</tspan>
+<tspan x="10" y="810"></tspan>
 
-<tspan x="10" y="826"></tspan>
+<tspan x="10" y="826">2017-10-06 00:36:24 +0800</tspan>
 
-<tspan x="10" y="842">2017-10-04 16:57:45 +0800</tspan>
+<tspan x="10" y="842">[npm publish] - npm publish 2017.10.2</tspan>
 
-<tspan x="10" y="858">[npm publish] - npm publish 2017.10.1</tspan>
+<tspan x="10" y="858">- add file assets.utility2.rollup.js</tspan>
 
-<tspan x="10" y="874">- create initial working swaggerdoc with /maps/api/directions and /maps/api/geocode apis</tspan>
+<tspan x="10" y="874">- apidoc - document swgg.apiDict</tspan>
 
-<tspan x="10" y="890"></tspan>
+<tspan x="10" y="890">- flesh out working example.js demo</tspan>
 
-<tspan x="10" y="906">2014-03-26 02:31:50 +0700</tspan>
+<tspan x="10" y="906">- persist api-key to localStorage</tspan>
 
-<tspan x="10" y="922">add blank README.md</tspan>
+<tspan x="10" y="922"></tspan>
+
+<tspan x="10" y="938">2017-10-04 16:57:45 +0800</tspan>
+
+<tspan x="10" y="954">[npm publish] - npm publish 2017.10.1</tspan>
+
+<tspan x="10" y="970">- create initial working swaggerdoc with /maps/api/directions and /maps/api/geocode apis</tspan>
+
+<tspan x="10" y="986"></tspan>
+
+<tspan x="10" y="1002">2014-03-26 02:31:50 +0700</tspan>
+
+<tspan x="10" y="1018">add blank README.md</tspan>
 
 </text>
 </svg>

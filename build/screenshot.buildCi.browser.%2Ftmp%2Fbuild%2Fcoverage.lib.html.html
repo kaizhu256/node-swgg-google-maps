@@ -1,12 +1,4 @@
-<html lang="en" class="x-istanbul" data-scrape="{
-    &quot;hrefDict&quot;: {
-        &quot;https://github.com/kaizhu256/node-swgg-google-maps&quot;: &quot;swgg-google-maps (v2018.4.21)&quot;,
-        &quot;https://github.com/kaizhu256/node-utility2&quot;: &quot;utility2&quot;
-    },
-    &quot;href&quot;: &quot;file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/coverage.lib.html&quot;,
-    &quot;url&quot;: &quot;file:///home/travis/build/kaizhu256/node-swgg-google-maps/tmp/build/coverage.lib.html&quot;,
-    &quot;bodyTextContent&quot;: &quot;/* istanbul instrument in package swgg_google_maps */\n/* jslint-utility2 */\n/*jslint\n    bitwise: true,\n    browser: true,\n    maxerr: 4,\n    maxlen: 100,\n    node: true,\n    nomen: true,\n    regexp: true,\n    stupid: true\n*/\n(function () {\n    'use strict';\n    var local;\n\n    // run shared js-env code - init-before\n    (function () {\n        // init local\n        local = {};\n        // init modeJs\n        local.modeJs = (function () {\n            try {\n                return typeof navigator.userAgent === 'string' &amp;&amp;\n                    typeof document.querySelector('body') === 'object' &amp;&amp;\n                    typeof XMLHttpRequest.prototype.open === 'function' &amp;&amp;\n                    'browser';\n            } catch (errorCaughtBrowser) {\n                return module.exports &amp;&amp;\n                    typeof process.versions.node === 'string' &amp;&amp;\n                    typeof require('http').createServer === 'function' &amp;&amp;\n                    'node';\n            }\n        }());\n        // init global\n        local.global = local.modeJs === 'browser'\n            ? window\n            : global;\n        // re-init local\n        local = local.global.local = (local.global.utility2 ||\n            require('./assets.utility2.rollup.js')).requireReadme();\n        // init test\n        local.testRunInit(local);\n    }());\n}());&quot;
-}"><head>
+<html lang="en" class="x-istanbul"><head>
     <title>Code coverage report for node-swgg-google-maps/test.js</title>
     <meta charset="utf-8">
 <style>
@@ -231,7 +223,7 @@
     width: 100%;
 }
 .x-istanbul .tableHeader td {
-    background: #eee;
+    background: #fff;
     border: 1px solid #666;
     padding: 5px;
 }
@@ -241,9 +233,37 @@
 </style>
 </head>
 <body class="x-istanbul">
+<script>
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (event) {
+        var range, selection;
+        if (event &&
+                event.code === "KeyA" &&
+                (event.ctrlKey || event.metaKey) &&
+                event.target.closest("pre")) {
+            range = document.createRange();
+            range.selectNodeContents(event.target.closest("pre"));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            event.preventDefault();
+        }
+    };
+    document.addEventListener("keydown", window.domOnEventSelectAllWithinPre);
+}());
+</script>
 <div class="header high">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/kaizhu256/node-swgg-google-maps">swgg-google-maps (v2018.4.21)</a>
+        <a href="https://github.com/kaizhu256/node-swgg-google-maps">swgg-google-maps (2018.4.21)</a>
     </h1>
     <h1>Code coverage report for <span class="entity">node-swgg-google-maps/test.js</span></h1>
     <table class="tableHeader">
@@ -258,10 +278,10 @@
     </thead>
     <tbody>
         <tr><td><span class="ignore-none">none</span></td>
-        <td>100%<br>(11 / 11)</td>
-        <td>100%<br>(12 / 12)</td>
-        <td>100%<br>(3 / 3)</td>
-        <td>100%<br>(11 / 11)</td>
+        <td>100%<br>(13 / 13)</td>
+        <td>66.67%<br>(8 / 12)</td>
+        <td>100%<br>(4 / 4)</td>
+        <td>100%<br>(13 / 13)</td>
     </tr></tbody>
     </table>
     <div class="path"><a href="../index.html">All files</a> » <a href="index.html">node-swgg-google-maps/</a> » test.js</div>
@@ -316,7 +336,14 @@
 46
 47
 48
-49</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+49
+50
+51
+52
+53
+54
+55
+56</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -328,20 +355,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -353,18 +380,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* istanbul instrument in package swgg_google_maps */
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js" tabindex="0">/* istanbul instrument in package swgg_google_maps */
 /* jslint-utility2 */
 /*jslint
     bitwise: true,
@@ -390,9 +424,9 @@
         local.modeJs = (function () {
             try {
                 return typeof navigator.userAgent === 'string' &amp;&amp;
-                    typeof document.querySelector('body') === 'object' &amp;&amp;
-                    typeof XMLHttpRequest.prototype.open === 'function' &amp;&amp;
-                    'browser';
+<span class="branch-1 cbranch-no" title="branch not covered">                    typeof document.querySelector('body') === 'object' </span>&amp;&amp;
+<span class="branch-2 cbranch-no" title="branch not covered">                    typeof XMLHttpRequest.prototype.open === 'function' </span>&amp;&amp;
+<span class="branch-3 cbranch-no" title="branch not covered">                    'browser';</span>
             } catch (errorCaughtBrowser) {
                 return module.exports &amp;&amp;
                     typeof process.versions.node === 'string' &amp;&amp;
@@ -402,7 +436,7 @@
         }());
         // init global
         local.global = local.modeJs === 'browser'
-            ? window
+            ? <span class="branch-0 cbranch-no" title="branch not covered">window</span>
             : global;
         // re-init local
         local = local.global.local = (local.global.utility2 ||
@@ -410,13 +444,20 @@
         // init test
         local.testRunInit(local);
     }());
+&nbsp;
+&nbsp;
+&nbsp;
+    // run shared js-env code - function
+    (function () {
+        return;
+    }());
 }());
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 21 2018 15:32:49 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Fri May 04 2018 08:01:39 GMT+0000 (UTC)</div>
 </div>
 
 
