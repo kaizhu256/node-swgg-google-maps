@@ -44,4 +44,11 @@
         // init test
         local.testRunInit(local);
     }());
+
+
+
+    // run shared js-env code - function
+    (function () {
+        return;
+    }());
 }());
