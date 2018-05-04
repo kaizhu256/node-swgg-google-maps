@@ -18201,13 +18201,24 @@ local.assetsDict['/favicon.ico'] = '';
                     local.ajax(options, function (error, xhr) {
                         options.xhr = xhr;
                         // validate xhr
-                        local.assert(options.xhr, error);
-                        local.onErrorDefault(error);
+                        local.assert(xhr, error);
+                        // handle redirect
+                        if (300 <= xhr.statusCode && xhr.statusCode < 400) {
+                            options.modeNext = Infinity;
+                            // recurse - redirect
+                            local.ajaxCrawl(local.objectSetDefault({
+                                depth: options.depth,
+                                modeNext: 1,
+                                url: xhr.responseStream.headers.location,
+                                urlParsed0: options.xhr.urlParsed
+                            }, options), local.nop);
+                        }
                         options.onNext();
                     });
                     break;
                 case 4:
-                    options.serverLog = {
+                    // debug ajaxCrawl
+                    console.error('serverLog - ' + JSON.stringify({
                         time: new Date(options.xhr.timeStart).toISOString(),
                         type: 'ajaxCrawl',
                         method: options.xhr.method,
@@ -18215,28 +18226,18 @@ local.assetsDict['/favicon.ico'] = '';
                         statusCode: options.xhr.statusCode,
                         timeElapsed: options.xhr.timeElapsed,
                         // extra
+                        responseContentLength: options.xhr.response.length,
                         depth: options.depth,
                         ii: options.ii,
                         listLength: options.list.length,
-                        dictSize: Object.keys(options.dict).length,
-                        isSaved: null
-                    };
-                    // skip file
-                    if (options.xhr.responseText.replace((/[\w\t <>]/g), '').length >
-                            0.5 * options.xhr.responseText.length ||
-                            local.fs.existsSync(options.file)) {
-                        console.error('serverLog - ' + JSON.stringify(options.serverLog));
-                        options.onNext();
-                        return;
-                    }
+                        dictSize: Object.keys(options.dict).length
+                    }));
                     // save file
                     local.fsWriteFileWithMkdirpSync(
                         options.file,
                         options.postProcess(options.xhr.responseText)
                     );
-                    options.serverLog.isSaved = true;
-                    console.error('serverLog - ' + JSON.stringify(options.serverLog));
-                    // skip file
+                    // skip crawl
                     if (!(options.depth < options.depthMax)) {
                         options.onNext();
                         return;
